@@ -53,6 +53,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef79d61d-3ab5-42d2-b887-c1c1b4bd83f2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -110,6 +119,17 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3b66f992-45b7-4bab-a6a6-0cdfefbaba7b"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -139,6 +159,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""4d6f4baf-d4fe-4463-aa1c-c3cc2c828fb2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""318f3406-8bf9-4234-9483-25c6c470d4ba"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -198,6 +227,17 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6d83b67e-f8d0-4f2b-9b54-b65c6b6695a7"",
+                    ""path"": ""<Keyboard>/numpadPeriod"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -334,11 +374,13 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Player1_Movement = m_Player1.FindAction("Movement", throwIfNotFound: true);
         m_Player1_Jump = m_Player1.FindAction("Jump", throwIfNotFound: true);
         m_Player1_Interact = m_Player1.FindAction("Interact", throwIfNotFound: true);
+        m_Player1_Pause = m_Player1.FindAction("Pause", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
         m_Player2_Movement = m_Player2.FindAction("Movement", throwIfNotFound: true);
         m_Player2_Jump = m_Player2.FindAction("Jump", throwIfNotFound: true);
         m_Player2_Interact = m_Player2.FindAction("Interact", throwIfNotFound: true);
+        m_Player2_Dash = m_Player2.FindAction("Dash", throwIfNotFound: true);
         // Dialogue
         m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
         m_Dialogue_SelectOption = m_Dialogue.FindAction("SelectOption", throwIfNotFound: true);
@@ -406,6 +448,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player1_Movement;
     private readonly InputAction m_Player1_Jump;
     private readonly InputAction m_Player1_Interact;
+    private readonly InputAction m_Player1_Pause;
     public struct Player1Actions
     {
         private @PlayerControls m_Wrapper;
@@ -413,6 +456,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player1_Movement;
         public InputAction @Jump => m_Wrapper.m_Player1_Jump;
         public InputAction @Interact => m_Wrapper.m_Player1_Interact;
+        public InputAction @Pause => m_Wrapper.m_Player1_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -431,6 +475,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnInteract;
+                @Pause.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -444,6 +491,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -455,6 +505,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player2_Movement;
     private readonly InputAction m_Player2_Jump;
     private readonly InputAction m_Player2_Interact;
+    private readonly InputAction m_Player2_Dash;
     public struct Player2Actions
     {
         private @PlayerControls m_Wrapper;
@@ -462,6 +513,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player2_Movement;
         public InputAction @Jump => m_Wrapper.m_Player2_Jump;
         public InputAction @Interact => m_Wrapper.m_Player2_Interact;
+        public InputAction @Dash => m_Wrapper.m_Player2_Dash;
         public InputActionMap Get() { return m_Wrapper.m_Player2; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -480,6 +532,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnInteract;
+                @Dash.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnDash;
             }
             m_Wrapper.m_Player2ActionsCallbackInterface = instance;
             if (instance != null)
@@ -493,6 +548,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
             }
         }
     }
@@ -551,12 +609,14 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
     public interface IDialogueActions
     {

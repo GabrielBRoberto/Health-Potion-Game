@@ -12,8 +12,7 @@ public class MultipleTargetsCamera : MonoBehaviour
 
     public float smoothTime = 0.5f;
 
-    public float maxZoom = 10f;
-    public float minZoom = 40f;
+    public float minZoom = 3f;
     public float zoomLimiter = 50f;
 
     private Vector3 velocity;
@@ -37,9 +36,15 @@ public class MultipleTargetsCamera : MonoBehaviour
     }
     private void Zoom()
     {
-        float newZoom = Mathf.Lerp(maxZoom, minZoom, GetGreatestDistance() / zoomLimiter);
+        float newZoom = Mathf.Lerp(cam.m_Lens.OrthographicSize, Vector2.Distance(targets[0].position, targets[1].position) / 2, Time.deltaTime);
 
-        cam.m_Lens.OrthographicSize = Mathf.Lerp(cam.m_Lens.OrthographicSize, Vector2.Distance(targets[0].position, targets[1].position) / 2, Time.deltaTime);
+        if (newZoom <= minZoom)
+        {
+            cam.m_Lens.OrthographicSize = minZoom;
+            return;
+        }
+
+        cam.m_Lens.OrthographicSize = newZoom;
     }
 
     private Vector3 GetCenterPoint()

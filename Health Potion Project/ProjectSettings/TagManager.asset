@@ -3,16 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Item
+  - Ground
+  - WallDetection
+  - WineWall
+  - Wall
+  - Dialogue
+  - Button
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Plataforma
   - Water
   - UI
-  - 
-  - 
+  - Player1
+  - Player2
   - 
   - 
   - 

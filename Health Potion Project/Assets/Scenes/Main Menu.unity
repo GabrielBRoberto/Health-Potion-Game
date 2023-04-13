@@ -956,6 +956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe02065d3f327648865bcb46793267e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicVolume: 0
 --- !u!4 &1157125057
 Transform:
   m_ObjectHideFlags: 0
@@ -1503,9 +1504,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157125055}
+      - m_Target: {fileID: 1148537653}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: 
+        m_MethodName: set_volume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

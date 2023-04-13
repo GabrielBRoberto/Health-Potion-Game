@@ -31,6 +31,11 @@ public class Detection : MonoBehaviour
         {
             player.canInteract = true;
         }
+
+        if (collision.tag == "DestructableWall" && player.isDashing)
+        {
+            collision.GetComponent<DestructableObstacule>().Active();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

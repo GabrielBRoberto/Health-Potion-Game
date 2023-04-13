@@ -1,5 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
+    AllIn1VfxAssmebly.dll:
+    - AllIn1VfxToolkit.AllIn1ParticleHelperSO
+    - AllIn1VfxToolkit.AllIn1VfxComponent
+    - AllIn1VfxToolkit.AllIn1VfxWindow
     Assembly-CSharp.dll:
     - ButtonActivate
     - DestructableObstacule
@@ -10,13 +14,13 @@ ScriptsOnlyBuild:
     - WaterTrigger
     DialogueGraph.Editor.dll:
     - Dlog.DialogueGraphVersion
-    - Dlog.DlogEditorWindow
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -154,6 +158,8 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
     - UnityEngine.RectOffset
+    UnityEngine.ParticleSystemModule:
+    - UnityEngine.ParticleSystem/MinMaxGradient
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -198,6 +204,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: SettingsClick
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: set_volume
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: BackClick
@@ -291,41 +300,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 852}
+      Script: {instanceID: 864}
     - Class: 114
-      Script: {instanceID: 1746}
+      Script: {instanceID: 1770}
     - Class: 114
-      Script: {instanceID: 1748}
+      Script: {instanceID: 1772}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 3160}
     - Class: 114
-      Script: {instanceID: 3902}
+      Script: {instanceID: 3938}
     - Class: 114
-      Script: {instanceID: 5532}
+      Script: {instanceID: 5580}
     - Class: 114
-      Script: {instanceID: 6132}
+      Script: {instanceID: 5892}
     - Class: 114
-      Script: {instanceID: 8288}
+      Script: {instanceID: 6192}
     - Class: 114
-      Script: {instanceID: 8806}
+      Script: {instanceID: 6768}
     - Class: 114
-      Script: {instanceID: 9298}
+      Script: {instanceID: 8368}
     - Class: 114
-      Script: {instanceID: 9722}
+      Script: {instanceID: 8886}
     - Class: 114
-      Script: {instanceID: 10522}
+      Script: {instanceID: 9380}
     - Class: 114
-      Script: {instanceID: 10856}
+      Script: {instanceID: 9806}
     - Class: 114
-      Script: {instanceID: 11074}
+      Script: {instanceID: 10610}
     - Class: 114
-      Script: {instanceID: 11992}
+      Script: {instanceID: 10946}
     - Class: 114
-      Script: {instanceID: 12428}
+      Script: {instanceID: 11166}
     - Class: 114
-      Script: {instanceID: 43046}
+      Script: {instanceID: 12054}
     - Class: 114
-      Script: {instanceID: 46536}
+      Script: {instanceID: 12092}
+    - Class: 114
+      Script: {instanceID: 12532}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -333,6 +344,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -376,117 +391,119 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 842}
+      Script: {instanceID: 854}
     - Class: 114
-      Script: {instanceID: 844}
+      Script: {instanceID: 856}
     - Class: 114
-      Script: {instanceID: 1740}
+      Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 1742}
+      Script: {instanceID: 1766}
     - Class: 114
-      Script: {instanceID: 1744}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 1746}
+      Script: {instanceID: 1770}
     - Class: 114
-      Script: {instanceID: 1748}
+      Script: {instanceID: 1772}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1918}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2492}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 3160}
     - Class: 114
-      Script: {instanceID: 3260}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3366}
     - Class: 114
-      Script: {instanceID: 3468}
+      Script: {instanceID: 3500}
     - Class: 114
-      Script: {instanceID: 4014}
+      Script: {instanceID: 4050}
     - Class: 114
-      Script: {instanceID: 4826}
+      Script: {instanceID: 4868}
     - Class: 114
-      Script: {instanceID: 4892}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 5048}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5066}
+      Script: {instanceID: 5112}
     - Class: 114
-      Script: {instanceID: 5526}
+      Script: {instanceID: 5406}
     - Class: 114
-      Script: {instanceID: 5532}
+      Script: {instanceID: 5574}
     - Class: 114
-      Script: {instanceID: 5596}
+      Script: {instanceID: 5580}
     - Class: 114
-      Script: {instanceID: 5690}
+      Script: {instanceID: 5644}
     - Class: 114
-      Script: {instanceID: 5762}
+      Script: {instanceID: 5740}
     - Class: 114
-      Script: {instanceID: 6120}
+      Script: {instanceID: 5812}
     - Class: 114
-      Script: {instanceID: 6132}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 7004}
+      Script: {instanceID: 6192}
     - Class: 114
-      Script: {instanceID: 7916}
+      Script: {instanceID: 7080}
     - Class: 114
-      Script: {instanceID: 7980}
+      Script: {instanceID: 7994}
     - Class: 114
-      Script: {instanceID: 8110}
+      Script: {instanceID: 8058}
     - Class: 114
-      Script: {instanceID: 8288}
+      Script: {instanceID: 8190}
     - Class: 114
-      Script: {instanceID: 8902}
+      Script: {instanceID: 8368}
     - Class: 114
-      Script: {instanceID: 9190}
+      Script: {instanceID: 8982}
     - Class: 114
-      Script: {instanceID: 9298}
+      Script: {instanceID: 9272}
     - Class: 114
-      Script: {instanceID: 9438}
+      Script: {instanceID: 9380}
     - Class: 114
-      Script: {instanceID: 9546}
+      Script: {instanceID: 9522}
     - Class: 114
-      Script: {instanceID: 9802}
+      Script: {instanceID: 9630}
     - Class: 114
-      Script: {instanceID: 9874}
+      Script: {instanceID: 9886}
     - Class: 114
-      Script: {instanceID: 10458}
+      Script: {instanceID: 9958}
     - Class: 114
-      Script: {instanceID: 10476}
+      Script: {instanceID: 10546}
     - Class: 114
-      Script: {instanceID: 10522}
+      Script: {instanceID: 10564}
     - Class: 114
-      Script: {instanceID: 10708}
+      Script: {instanceID: 10610}
     - Class: 114
-      Script: {instanceID: 10856}
+      Script: {instanceID: 10796}
     - Class: 114
-      Script: {instanceID: 10978}
+      Script: {instanceID: 10946}
     - Class: 114
-      Script: {instanceID: 11074}
+      Script: {instanceID: 11070}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11166}
     - Class: 114
-      Script: {instanceID: 11434}
+      Script: {instanceID: 11390}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11528}
     - Class: 114
-      Script: {instanceID: 11600}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 11720}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 12136}
+      Script: {instanceID: 11818}
     - Class: 114
-      Script: {instanceID: 12428}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 12442}
+      Script: {instanceID: 12532}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12546}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 60264}
+      Script: {instanceID: 13004}
+    - Class: 114
+      Script: {instanceID: 13192}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -632,6 +649,12 @@ ScriptsOnlyBuild:
     className: CinemachineCollider
   - hash:
       serializedVersion: 2
+      Hash: ae3a9ebb35a5c278d0006a80fb79168b
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1ParticleHelperComponent
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -728,6 +751,12 @@ ScriptsOnlyBuild:
     className: CoroutineRunner
   - hash:
       serializedVersion: 2
+      Hash: aa736fd63f5b81aa212bd60831c698d6
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1DemoScaleTween
+  - hash:
+      serializedVersion: 2
       Hash: 8fbc134fd506d97c845cf2b715231396
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -750,6 +779,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineInputProvider
+  - hash:
+      serializedVersion: 2
+      Hash: e41e5d0a5346dda162668f3e0447ab2e
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1VfxFakeLightDirSetter
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -884,6 +919,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit.Scripts
+    className: AllIn1GraphicMaterialDuplicate
+  - hash:
+      serializedVersion: 2
       Hash: cd1c93a552a813159175d818a844dc09
     assemblyName: Unity.2D.Tilemap.Extras.dll
     namespaceName: UnityEngine.Tilemaps
@@ -914,6 +955,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: db320f943ba38897104c1b77701805a3
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1MouseRotate
+  - hash:
+      serializedVersion: 2
       Hash: 6f1a7bf478686f9b2a14f524c902853b
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -926,7 +973,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: e30441bfa3646e9061473cea9e090891
+      Hash: 3ec546f3a2af5d8a4fc52107cc1a81f2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -1034,6 +1081,12 @@ ScriptsOnlyBuild:
     className: LineEntry
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1ParticleHelperEditor
+  - hash:
+      serializedVersion: 2
       Hash: bd543bad7f9f6262f10595aadb130d22
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1100,6 +1153,12 @@ ScriptsOnlyBuild:
     className: GridInformation
   - hash:
       serializedVersion: 2
+      Hash: 3d7b4e0a1e772f2871197f7fbd34d32e
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: All1VfxDemoEffect
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1116,6 +1175,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerIndirectToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 3ff9b627e2f037f0e16be82eb6d8c212
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: All1VfxDemoEffectCollection
   - hash:
       serializedVersion: 2
       Hash: b042845c32483c46155ae6479f23d804
@@ -1196,6 +1261,12 @@ ScriptsOnlyBuild:
     className: CinemachineOrbitalTransposer
   - hash:
       serializedVersion: 2
+      Hash: 2e898a46819fce9e6dde8fc1ba2a1f38
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1ParticleHelperSO
+  - hash:
+      serializedVersion: 2
       Hash: df21ffd1864551a3e43410f28754a73e
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1256,6 +1327,12 @@ ScriptsOnlyBuild:
     className: LiftGammaGain
   - hash:
       serializedVersion: 2
+      Hash: 5b2f7665293a038ea4f9b8e66cba946a
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1VfxDemoController
+  - hash:
+      serializedVersion: 2
       Hash: bb6b9a25e695d7981ce2d853a697a828
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -1268,10 +1345,22 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerBitField
   - hash:
       serializedVersion: 2
+      Hash: adc6b0e80c0b0ef7fca3f1a585ccb49e
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1VfxBounceAnimation
+  - hash:
+      serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestructableObstacule
   - hash:
       serializedVersion: 2
       Hash: 14bb5bc24cc6a77bdbb48c1c717f6db3
@@ -1310,6 +1399,12 @@ ScriptsOnlyBuild:
     className: TouchSimulation
   - hash:
       serializedVersion: 2
+      Hash: 119343a77f3c9e53e7a0ade9460ff5a6
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1DemoProjectile
+  - hash:
+      serializedVersion: 2
       Hash: d3f29ba27f28c1f558880c4df5545ed3
     assemblyName: Unity.InputSystem.dll
     namespaceName: 
@@ -1328,10 +1423,22 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1VfxEditor
+  - hash:
+      serializedVersion: 2
       Hash: 36025d42bf23fda83a55bf1429201821
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerRow
+  - hash:
+      serializedVersion: 2
+      Hash: 3016358d5f05e3d07ad09664ee9ff0ac
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1VfxAutoDestroy
   - hash:
       serializedVersion: 2
       Hash: 76aef43e801605d1829c8805eeee135c
@@ -1370,6 +1477,18 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: e23b666d8ccfddacdc05e3af31b772b7
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1VfxParticleSystemTime
+  - hash:
+      serializedVersion: 2
+      Hash: 7cbbf63733faa90a3393087be5201076
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1VfxScrollShaderProperty
+  - hash:
+      serializedVersion: 2
       Hash: 0713e001d0d6f9df5412ad93530a175a
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
@@ -1400,6 +1519,24 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 46a07823e8d18d73de3bab725d9e9055
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1DoShake
+  - hash:
+      serializedVersion: 2
+      Hash: fcbea4072ac6a313bd79deab596fd091
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: All1DemoSceneColor
+  - hash:
+      serializedVersion: 2
+      Hash: 63ea1d8d374f429cea2676a4296ec117
+    assemblyName: AllIn1VfxTexDemoAssembly.dll
+    namespaceName: AllIn1VfxToolkit.DemoAssets.TexturesDemo.Scripts
+    className: AllIn1VfxTextureDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 775cb71fe628cc1abe9811337bf8b34e
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1424,6 +1561,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1VfxComponent
+  - hash:
+      serializedVersion: 2
       Hash: 924151518b0617aca3f4a3b2e422689f
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1434,6 +1577,18 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineStoryboard
+  - hash:
+      serializedVersion: 2
+      Hash: 718f40006c952a642048fc71e81e499f
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1CanvasFader
+  - hash:
+      serializedVersion: 2
+      Hash: df9f4c6f281fc1d2c0e41310bd14a866
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1TimeControl
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1476,6 +1631,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: Variables
+  - hash:
+      serializedVersion: 2
+      Hash: 885acf6361ebff66c91fa31aaee47498
+    assemblyName: AllIn1VfxTexDemoAssembly.dll
+    namespaceName: AllIn1VfxToolkit.DemoAssets.TexturesDemo.Scripts
+    className: All1VfxDemoTextureCollection
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1670,6 +1831,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 1437d31c448239cd2b18da19cffefce7
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: All1DemoProjectileObstacle
+  - hash:
+      serializedVersion: 2
       Hash: cfdd0010efd7b54c2b7512656dbc9119
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
@@ -1808,6 +1975,12 @@ ScriptsOnlyBuild:
     className: CinemachineSmoothPath
   - hash:
       serializedVersion: 2
+      Hash: a0e5853bfd3486046c51a96bf1345c37
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1VfxScrollShaderTexture
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1872,6 +2045,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineIndependentImpulseListener
+  - hash:
+      serializedVersion: 2
+      Hash: aa736fd63f5b81aa212bd60831c698d6
+    assemblyName: AllIn1VfxTexDemoAssembly.dll
+    namespaceName: AllIn1VfxToolkit.DemoAssets.TexturesDemo.Scripts
+    className: AllIn1DemoScaleTween
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -2012,6 +2191,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: 8ca86901fa9aaa2285592dff12edf14d
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: All1DemoDropdownScroller
+  - hash:
+      serializedVersion: 2
       Hash: eaf7a28d6026ee1eeaa03b66d53a6fc5
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -2144,10 +2329,22 @@ ScriptsOnlyBuild:
     className: SpriteSkinUpdateHelper
   - hash:
       serializedVersion: 2
+      Hash: be44d22a44ca525932ae31f58e39683c
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1LookAt
+  - hash:
+      serializedVersion: 2
       Hash: 622d571bcc9cf3fcd7832178894f732d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
+  - hash:
+      serializedVersion: 2
+      Hash: 2c95038140d8ef5bad2a241d5dbc82f3
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: AllIn1VfxWindow
   - hash:
       serializedVersion: 2
       Hash: d85b490177c3124d2335460060a2b807
@@ -2204,6 +2401,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: 0e6a0672e6d9d0a0e6eef93fc08a47e0
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1AutoRotate
+  - hash:
+      serializedVersion: 2
       Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -2258,6 +2461,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerCanvas
   - hash:
       serializedVersion: 2
+      Hash: 63cfc59c585247c705d67bd4f043c7cf
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1VfxFadeLight
+  - hash:
+      serializedVersion: 2
       Hash: 287a4aa7392bcfb309b4d7b4dc89eb3c
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -2274,6 +2483,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: b1162c5538aaf24fb88526b6900dcf62
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1Shaker
   - hash:
       serializedVersion: 2
       Hash: f79e983672d079ff24eee15484fb74b8
@@ -2336,6 +2551,12 @@ ScriptsOnlyBuild:
     className: RuleTile
   - hash:
       serializedVersion: 2
+      Hash: e37773ac4d27e6219d4575a2e110f302
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonActivate
+  - hash:
+      serializedVersion: 2
       Hash: 284f5d9bdaed2e2fa4d300ea0adcd718
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2348,6 +2569,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: 66dd09338de9fee0dd7aa93abc24c0df
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: All1DemoMouseLocker
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -2358,6 +2585,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerDownMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a08780f8d9e40f2c14414078b0926cf5
+    assemblyName: AllIn1VfxDemoScriptAssemblies.dll
+    namespaceName: AllIn1VfxToolkit.Demo.Scripts
+    className: AllIn1ChangeAllChildTextFonts
   - hash:
       serializedVersion: 2
       Hash: 7c792393fb82488bd20139dcc5ba26d8
@@ -2444,6 +2677,12 @@ ScriptsOnlyBuild:
     className: PaniniProjection
   - hash:
       serializedVersion: 2
+      Hash: 7144a4f187f9296b89796020116b9851
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: cc2f46f879d85fb4c3b330475eed4d9c
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -2462,6 +2701,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerFoldout
   - hash:
       serializedVersion: 2
+      Hash: 11873cdf6c8790fc1b6dfd6f209ca88b
+    assemblyName: AllIn1VfxAssmebly.dll
+    namespaceName: AllIn1VfxToolkit
+    className: All1VfxRandomTimeSeed
+  - hash:
+      serializedVersion: 2
       Hash: a2113831d3323f931007e1b3812dc814
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -2478,26 +2723,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: e37773ac4d27e6219d4575a2e110f302
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ButtonActivate
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DestructableObstacule
-  - hash:
-      serializedVersion: 2
-      Hash: 7144a4f187f9296b89796020116b9851
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Level.unity
-  playerPath: D:/Rupture/Health Potion Project.exe
+  playerPath: E:/GitHub Projects/Health-Potion-Build/Health Potion Project.exe

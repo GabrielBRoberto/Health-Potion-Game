@@ -71,3 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Health Potion Project/Library/PackageCache/com.unity.burst@1.8.2/.Runtime/libburst-llvm-14.dylib
+Health Potion Project/Library/ArtifactDB
+Health Potion Project/Library/ArtifactDB
+Health Potion Project/Library/ArtifactDB

@@ -11,6 +11,7 @@ TagManager:
   - Wall
   - Dialogue
   - Button
+  - DestructableWall
   layers:
   - Default
   - TransparentFX

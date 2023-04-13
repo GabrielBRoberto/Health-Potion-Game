@@ -1,33 +1,44 @@
+using Dlog.Runtime;
+using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 public class Player : MonoBehaviour
 {
-    [SerializeField]
+    private Rigidbody2D rb;
     private PlayerControls inputActions;
 
+    [SerializeField]
+    private InputActionAsset playerActionMap;
+
+    [Header("Stats")]
     [SerializeField]
     private float speed = 50f;
     [SerializeField]
     private float jumpForce = 50f;
     [SerializeField]
-    private float dashForce = 10f;
+    private float dashSpeed = 10f;
 
-    private Rigidbody2D rb;
     //private Animator animator;
-    public bool isGrounded;
+
+    [Space]
+    [Header("Booleans")]
     public bool onWall;
-
-    private bool wallJump;
-
-    public PlayerType type;
-
+    public bool canMove;
     public bool canJump;
+    public bool wallJump;
+    public bool hasDashed;
+    public bool isDashing;
+    public bool isGrounded;
     public bool canInteract;
     public bool interacting;
 
-    private bool isDashing;
+    [Space]
+
+    public PlayerType type;
 
     [SerializeField]
     private GameObject InteractionIcon;
@@ -78,6 +89,13 @@ public class Player : MonoBehaviour
         }
         InteractionIcon.SetActive(canInteract);
 
+        float x = (type == PlayerType.Player1) ? inputActions.Player1.Movement.ReadValue<float>() :
+            inputActions.Player2.Movement.ReadValue<float>();
+
+        Vector2 dir = new Vector2(x, 0);
+
+        Walk(dir, type);
+
         #region Player 1 Zone
         if (type == PlayerType.Player1)
         {
@@ -94,14 +112,14 @@ public class Player : MonoBehaviour
 
                     interacting = false;
 
-                    rb.AddForce(new Vector2(0f, jumpForce));
+                    Jump(Vector2.up);
                 }
             }
             else if (!isGrounded && !wallJump && canJump)
             {
                 if (inputActions.Player1.Jump.triggered)
                 {
-                    rb.AddForce(new Vector2(0f, jumpForce));
+                    Jump(Vector2.up);
                     canJump = false;
                 }
             }
@@ -123,7 +141,7 @@ public class Player : MonoBehaviour
 
                     interacting = false;
 
-                    rb.AddForce(new Vector2(0f, jumpForce));
+                    Jump(Vector2.up);
                 }
             }
             /*
@@ -136,39 +154,16 @@ public class Player : MonoBehaviour
                 }
             }
             */
-
             if (inputActions.Player2.Dash.triggered)
             {
-                float speedValue = rb.velocity.x;
-
-                float dash = 0;
-
-                if (speedValue < 0f)
-                {
-                    dash = -3f;
-                }
-                else
-                {
-                    dash = 3f;
-                }
-                transform.position = Vector3.Lerp(transform.position , new Vector3(transform.position.x + dash, transform.position.y, transform.position.z), 2f);
+                Dash(dir.x, dir.y);
             }
         }
         #endregion
     }
+ 
     private void FixedUpdate()
     {
-        float horizontalInput = 0;
-
-        if (type == PlayerType.Player1)
-        {
-            horizontalInput = inputActions.Player1.Movement.ReadValue<float>();
-        }
-        if (type == PlayerType.Player2)
-        {
-            horizontalInput = inputActions.Player2.Movement.ReadValue<float>();
-        }
-
         if (interacting)
         {
             rb.gravityScale = 0f;
@@ -178,7 +173,7 @@ public class Player : MonoBehaviour
 
             if (type == PlayerType.Player1)
             {
-                rb.velocity = new Vector2(0, horizontalInput * speed * Time.deltaTime);
+                //rb.velocity = new Vector2(0, horizontalInput * speed * Time.deltaTime);
             }
 
             if (type == PlayerType.Player2)
@@ -190,11 +185,10 @@ public class Player : MonoBehaviour
         }
         else
         {
-            rb.gravityScale = 1f;
-
-            rb.velocity = new Vector2(horizontalInput * speed * Time.deltaTime, rb.velocity.y);
+            rb.gravityScale = 3f;
         }
     }
+
     private void LateUpdate()
     {
         float speedValue = rb.velocity.x;
@@ -233,10 +227,6 @@ public class Player : MonoBehaviour
             collision.GetComponent<ButtonActivate>().Active();
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        
-    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Button")
@@ -248,6 +238,57 @@ public class Player : MonoBehaviour
     public void OnWaterHit()
     {
         transform.position = startPosition;
+    }
+
+    private void Walk(Vector2 dir, PlayerType playerType)
+    {
+        if (!canMove)
+        {
+            return;
+        }
+        if (onWall)
+        {
+            return;
+        }
+        if (type != playerType)
+        {
+            return;
+        }
+
+        rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed, rb.velocity.y)), 10 * Time.deltaTime);
+    }
+
+    private void Jump(Vector2 dir)
+    {
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.velocity += dir * jumpForce;
+    }
+
+    private void Dash(float x, float y)
+    {
+        hasDashed = true;
+
+        rb.velocity = Vector2.zero;
+
+        Vector2 dir = new Vector2(x, y);
+
+        dashSpeed = (dir.normalized.x != 0) ? 25 : 10;
+
+        rb.velocity += dir.normalized * dashSpeed;
+        StartCoroutine(DashWait());
+    }
+
+    IEnumerator DashWait()
+    {
+        rb.gravityScale = 0f;
+
+        isDashing = true;
+
+        yield return new WaitForSeconds(1f);
+
+        rb.gravityScale = 3f;
+
+        isDashing = false;
     }
 }
 

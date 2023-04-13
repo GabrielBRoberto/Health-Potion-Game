@@ -2,13 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestructableObstacule : MonoBehaviour
+public class DestructableObstacule : Activate
 {
-    private void OnTriggerStay2D(Collider2D collision)
+    public override void Active()
     {
-        if (collision.tag == "Player")
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }

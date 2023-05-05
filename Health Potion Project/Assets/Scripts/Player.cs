@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private PlayerControls inputActions;
+    public PlayerControls inputActions;
 
     [SerializeField]
     private InputActionAsset playerActionMap;
@@ -44,6 +44,9 @@ public class Player : MonoBehaviour
     private GameObject InteractionIcon;
 
     private Vector3 startPosition;
+
+    private bool onTrigger = false;
+    private ActivateMovePlatform platform;
 
     private void Start()
     {
@@ -99,6 +102,11 @@ public class Player : MonoBehaviour
         #region Player 1 Zone
         if (type == PlayerType.Player1)
         {
+            if (inputActions.Player1.Interact.triggered && onTrigger)
+            {
+                platform.Active();
+            }
+
             if (inputActions.Player1.Interact.triggered && canInteract)
             {
                 interacting = !interacting;
@@ -128,6 +136,11 @@ public class Player : MonoBehaviour
         #region Player 2 Zone
         if (type == PlayerType.Player2)
         {
+            if (inputActions.Player2.Interact.triggered && onTrigger)
+            {
+                platform.Active();
+            }
+
             if (inputActions.Player2.Interact.triggered && canInteract)
             {
                 interacting = !interacting;
@@ -226,12 +239,39 @@ public class Player : MonoBehaviour
         {
             collision.GetComponent<ButtonActivate>().Active();
         }
+
+        if (collision.tag == "PlatformButton")
+        {
+            onTrigger = true;
+
+            platform = collision.GetComponent<ActivateMovePlatform>();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Button")
         {
             collision.GetComponent<ButtonActivate>().Desactivate();
+        }
+
+        if (collision.tag == "PlatformButton")
+        {
+            onTrigger = false;
+
+            platform = null;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "PlatformButton")
+        {
+            Debug.Log("!");
+
+            if (inputActions.Player1.Interact.triggered)
+            {
+                collision.GetComponent<ActivateMovePlatform>().Active();
+            }
         }
     }
 

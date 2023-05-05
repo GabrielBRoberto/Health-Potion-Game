@@ -11,7 +11,15 @@ ScriptsOnlyBuild:
     - GameManager
     - Menu
     - Player
+    - Spike
     - WaterTrigger
+    Cinemachine.dll:
+    - Cinemachine.CinemachineBrain
+    - Cinemachine.CinemachineClearShot
+    - Cinemachine.CinemachineCollider
+    - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachineTargetGroup
+    - Cinemachine.CinemachineVirtualCamera
     DialogueGraph.Editor.dll:
     - Dlog.DialogueGraphVersion
     Unity.2D.Animation.Editor.dll:
@@ -121,6 +129,13 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
+    Cinemachine:
+    - Cinemachine.CinemachineBlendDefinition
+    - Cinemachine.CinemachineBrain/BrainEvent
+    - Cinemachine.CinemachineBrain/VcamActivatedEvent
+    - Cinemachine.CinemachineTargetGroup/Target
+    - Cinemachine.CinemachineVirtualCameraBase/TransitionParams
+    - Cinemachine.LensSettings
     DialogueGraph.Editor:
     - Dlog.SemVer
     Unity.InputSystem:
@@ -306,37 +321,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1772}
     - Class: 114
+      Script: {instanceID: 2226}
+    - Class: 114
+      Script: {instanceID: 2704}
+    - Class: 114
       Script: {instanceID: 3160}
     - Class: 114
       Script: {instanceID: 3938}
     - Class: 114
+      Script: {instanceID: 4210}
+    - Class: 114
+      Script: {instanceID: 5516}
+    - Class: 114
       Script: {instanceID: 5580}
     - Class: 114
-      Script: {instanceID: 5892}
+      Script: {instanceID: 5894}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 6194}
     - Class: 114
-      Script: {instanceID: 6768}
+      Script: {instanceID: 6772}
     - Class: 114
-      Script: {instanceID: 8368}
+      Script: {instanceID: 8372}
     - Class: 114
-      Script: {instanceID: 8886}
+      Script: {instanceID: 8432}
     - Class: 114
-      Script: {instanceID: 9380}
+      Script: {instanceID: 8890}
     - Class: 114
-      Script: {instanceID: 9806}
+      Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 10610}
+      Script: {instanceID: 9810}
     - Class: 114
-      Script: {instanceID: 10946}
+      Script: {instanceID: 10614}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 10950}
     - Class: 114
-      Script: {instanceID: 12054}
+      Script: {instanceID: 11142}
     - Class: 114
-      Script: {instanceID: 12092}
+      Script: {instanceID: 11170}
     - Class: 114
-      Script: {instanceID: 12532}
+      Script: {instanceID: 12058}
+    - Class: 114
+      Script: {instanceID: 12096}
+    - Class: 114
+      Script: {instanceID: 12536}
+    - Class: 114
+      Script: {instanceID: 30448}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -437,73 +466,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5644}
     - Class: 114
-      Script: {instanceID: 5740}
+      Script: {instanceID: 5742}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 5814}
     - Class: 114
-      Script: {instanceID: 6178}
+      Script: {instanceID: 6180}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 6194}
     - Class: 114
-      Script: {instanceID: 7080}
+      Script: {instanceID: 7084}
     - Class: 114
-      Script: {instanceID: 7994}
+      Script: {instanceID: 7998}
     - Class: 114
-      Script: {instanceID: 8058}
+      Script: {instanceID: 8062}
     - Class: 114
-      Script: {instanceID: 8190}
+      Script: {instanceID: 8194}
     - Class: 114
-      Script: {instanceID: 8368}
+      Script: {instanceID: 8372}
     - Class: 114
-      Script: {instanceID: 8982}
+      Script: {instanceID: 8986}
     - Class: 114
-      Script: {instanceID: 9272}
+      Script: {instanceID: 9276}
     - Class: 114
-      Script: {instanceID: 9380}
+      Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 9522}
+      Script: {instanceID: 9526}
     - Class: 114
-      Script: {instanceID: 9630}
+      Script: {instanceID: 9634}
     - Class: 114
-      Script: {instanceID: 9886}
+      Script: {instanceID: 9890}
     - Class: 114
-      Script: {instanceID: 9958}
+      Script: {instanceID: 9962}
     - Class: 114
-      Script: {instanceID: 10546}
+      Script: {instanceID: 10550}
     - Class: 114
-      Script: {instanceID: 10564}
+      Script: {instanceID: 10568}
     - Class: 114
-      Script: {instanceID: 10610}
+      Script: {instanceID: 10614}
     - Class: 114
-      Script: {instanceID: 10796}
+      Script: {instanceID: 10800}
     - Class: 114
-      Script: {instanceID: 10946}
+      Script: {instanceID: 10950}
     - Class: 114
-      Script: {instanceID: 11070}
+      Script: {instanceID: 11074}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 11170}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11394}
     - Class: 114
-      Script: {instanceID: 11528}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11616}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11698}
     - Class: 114
-      Script: {instanceID: 11818}
+      Script: {instanceID: 11822}
     - Class: 114
-      Script: {instanceID: 12240}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12532}
+      Script: {instanceID: 12536}
     - Class: 114
-      Script: {instanceID: 12546}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 12716}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 13008}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13196}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1327,6 +1356,12 @@ ScriptsOnlyBuild:
     className: LiftGammaGain
   - hash:
       serializedVersion: 2
+      Hash: 9370d1b55b626007676e8e05c34b6eb9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActivateMovePlatform
+  - hash:
+      serializedVersion: 2
       Hash: 5b2f7665293a038ea4f9b8e66cba946a
     assemblyName: AllIn1VfxDemoScriptAssemblies.dll
     namespaceName: AllIn1VfxToolkit.Demo.Scripts
@@ -1475,6 +1510,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: 4ac7484ffef3e081c24562efdb6095f9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActivatePlatform
   - hash:
       serializedVersion: 2
       Hash: e23b666d8ccfddacdc05e3af31b772b7
@@ -2723,8 +2764,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spike
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Level.unity
-  playerPath: E:/GitHub Projects/Health-Potion-Build/Health Potion Project.exe
+  playerPath: C:/Users/PC/Desktop/Rupture_J2/Health Potion Project.exe

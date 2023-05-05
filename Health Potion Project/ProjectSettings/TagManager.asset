@@ -12,6 +12,8 @@ TagManager:
   - Dialogue
   - Button
   - DestructableWall
+  - Lever
+  - PlatformButton
   layers:
   - Default
   - TransparentFX

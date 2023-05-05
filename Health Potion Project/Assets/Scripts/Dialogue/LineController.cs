@@ -27,9 +27,11 @@ public class LineController : MonoBehaviour {
 
     private void Start()
     {
+        /*
         spaceAction.Enable();
         setaUpAction.Enable();
         setaDownAction.Enable();
+        */
     }
 
     public void Clear() 

@@ -1,83 +1,207 @@
-using UnityEngine.InputSystem;
-using UnityEngine;
+using Dlog.Runtime;
 using System;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(CapsuleCollider2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class Player : MonoBehaviour
 {
-    [SerializeField]
-    private PlayerControls inputActions;
+    private Rigidbody2D rb;
+    public PlayerControls inputActions;
 
+    [SerializeField]
+    private InputActionAsset playerActionMap;
+
+    [Header("Stats")]
     [SerializeField]
     private float speed = 50f;
     [SerializeField]
     private float jumpForce = 50f;
+    [SerializeField]
+    private float dashSpeed = 10f;
 
-    private Rigidbody2D rb;
-    private Animator animator;
-    public bool isGrounded;
+    //private Animator animator;
 
-    public string PlayerNumber;
-
+    [Space]
+    [Header("Booleans")]
+    public bool onWall;
+    public bool canMove;
     public bool canJump;
+    public bool wallJump;
+    public bool hasDashed;
+    public bool isDashing;
+    public bool isGrounded;
+    public bool canInteract;
+    public bool interacting;
+
+    [Space]
+
+    public PlayerType type;
+
+    [SerializeField]
+    private GameObject InteractionIcon;
+
+    private Vector3 startPosition;
+
+    private bool onTrigger = false;
+    private ActivateMovePlatform platform;
 
     private void Start()
     {
         inputActions = new PlayerControls();
 
         rb = gameObject.GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
+
+        startPosition = transform.position;
 
         #region Input Enable
-        inputActions.Player1.Movement.Enable();
-        inputActions.Player1.Jump.Enable();
-        inputActions.Player1.Interact.Enable();
-
-        inputActions.Player2.Movement.Enable();
-        inputActions.Player2.Jump.Enable();
-        inputActions.Player2.Interact.Enable();
+        if (type == PlayerType.Player1)
+        {
+            inputActions.Player1.Movement.Enable();
+            inputActions.Player1.Jump.Enable();
+            inputActions.Player1.Interact.Enable();
+            inputActions.Player1.Pause.Enable();
+        }
+        if (type == PlayerType.Player2)
+        {
+            inputActions.Player2.Movement.Enable();
+            inputActions.Player2.Jump.Enable();
+            inputActions.Player2.Interact.Enable();
+            inputActions.Player2.Dash.Enable();
+        }
         #endregion
     }
 
     private void Update()
     {
-        if (PlayerNumber == "1")
+        if (inputActions.Player1.Pause.triggered)
         {
-            if (isGrounded && inputActions.Player1.Jump.triggered)
+            Menu script = GameObject.FindObjectOfType<Menu>();
+
+            script.onMenu = !script.onMenu;
+
+            Time.timeScale = script.onMenu ? 0f : 1f;
+        }
+
+        if (!canInteract)
+        {
+            interacting = false;
+        }
+        InteractionIcon.SetActive(canInteract);
+
+        float x = (type == PlayerType.Player1) ? inputActions.Player1.Movement.ReadValue<float>() :
+            inputActions.Player2.Movement.ReadValue<float>();
+
+        Vector2 dir = new Vector2(x, 0);
+
+        Walk(dir, type);
+
+        #region Player 1 Zone
+        if (type == PlayerType.Player1)
+        {
+            if (inputActions.Player1.Interact.triggered && onTrigger)
             {
-                rb.AddForce(new Vector2(0f, jumpForce));
+                platform.Active();
             }
 
-            if (!isGrounded && canJump && inputActions.Player1.Jump.triggered)
+            if (inputActions.Player1.Interact.triggered && canInteract)
             {
-                rb.AddForce(new Vector2(0f, jumpForce));
-                canJump = false;
+                interacting = !interacting;
+            }
+
+            if (isGrounded || wallJump)
+            {
+                if (inputActions.Player1.Jump.triggered)
+                {
+                    wallJump = false;
+
+                    interacting = false;
+
+                    Jump(Vector2.up);
+                }
+            }
+            else if (!isGrounded && !wallJump && canJump)
+            {
+                if (inputActions.Player1.Jump.triggered)
+                {
+                    Jump(Vector2.up);
+                    canJump = false;
+                }
             }
         }
-        if (PlayerNumber == "2")
+        #endregion
+        #region Player 2 Zone
+        if (type == PlayerType.Player2)
         {
-            if (isGrounded && inputActions.Player2.Jump.triggered)
+            if (inputActions.Player2.Interact.triggered && onTrigger)
             {
-                rb.AddForce(new Vector2(0f, jumpForce));
+                platform.Active();
+            }
+
+            if (inputActions.Player2.Interact.triggered && canInteract)
+            {
+                interacting = !interacting;
+            }
+
+            if (isGrounded || wallJump)
+            {
+                if (inputActions.Player2.Jump.triggered)
+                {
+                    wallJump = false;
+
+                    interacting = false;
+
+                    Jump(Vector2.up);
+                }
+            }
+            /*
+            else if (!isGrounded && !wallJump && canJump)
+            {
+                if (inputActions.Player2.Jump.triggered)
+                {
+                    rb.AddForce(new Vector2(0f, jumpForce));
+                    canJump = false;
+                }
+            }
+            */
+            if (inputActions.Player2.Dash.triggered)
+            {
+                Dash(dir.x, dir.y);
             }
         }
+        #endregion
     }
+ 
     private void FixedUpdate()
     {
-        float horizontalInput = 0;
-
-        if (PlayerNumber == "1")
+        if (interacting)
         {
-            horizontalInput = inputActions.Player1.Movement.ReadValue<float>();
-        }
-        if (PlayerNumber == "2")
-        {
-            horizontalInput = inputActions.Player2.Movement.ReadValue<float>();
-        }
+            rb.gravityScale = 0f;
 
-        rb.velocity = new Vector2(horizontalInput * speed * Time.deltaTime, rb.velocity.y);
+            wallJump = true;
+            canJump = true;
+
+            if (type == PlayerType.Player1)
+            {
+                //rb.velocity = new Vector2(0, horizontalInput * speed * Time.deltaTime);
+            }
+
+            if (type == PlayerType.Player2)
+            {
+                onWall = true;
+
+                rb.velocity = Vector2.zero;
+            }
+        }
+        else
+        {
+            rb.gravityScale = 3f;
+        }
     }
+
     private void LateUpdate()
     {
         float speedValue = rb.velocity.x;
@@ -93,18 +217,123 @@ public class Player : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        animator.SetFloat("Speed", speedValue);
+        //animator.SetFloat("Speed", speedValue);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Item")
+        if (type == PlayerType.Player1)
         {
-            collision.GetComponent<GetItemActivate>().Active();
+            if (collision.tag == "Item")
+            {
+                collision.GetComponent<GetItemActivate>().Active();
+            }
+
+            if (collision.tag == "Dialogue")
+            {
+                collision.GetComponent<DialogueActivate>().Active();
+            }
         }
-        if (collision.tag == "Dialogue")
+
+        if (collision.tag == "Button")
         {
-            collision.GetComponent<DialogueActivate>().Active();
+            collision.GetComponent<ButtonActivate>().Active();
+        }
+
+        if (collision.tag == "PlatformButton")
+        {
+            onTrigger = true;
+
+            platform = collision.GetComponent<ActivateMovePlatform>();
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Button")
+        {
+            collision.GetComponent<ButtonActivate>().Desactivate();
+        }
+
+        if (collision.tag == "PlatformButton")
+        {
+            onTrigger = false;
+
+            platform = null;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "PlatformButton")
+        {
+            Debug.Log("!");
+
+            if (inputActions.Player1.Interact.triggered)
+            {
+                collision.GetComponent<ActivateMovePlatform>().Active();
+            }
+        }
+    }
+
+    public void OnWaterHit()
+    {
+        transform.position = startPosition;
+    }
+
+    private void Walk(Vector2 dir, PlayerType playerType)
+    {
+        if (!canMove)
+        {
+            return;
+        }
+        if (onWall)
+        {
+            return;
+        }
+        if (type != playerType)
+        {
+            return;
+        }
+
+        rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed, rb.velocity.y)), 10 * Time.deltaTime);
+    }
+
+    private void Jump(Vector2 dir)
+    {
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.velocity += dir * jumpForce;
+    }
+
+    private void Dash(float x, float y)
+    {
+        hasDashed = true;
+
+        rb.velocity = Vector2.zero;
+
+        Vector2 dir = new Vector2(x, y);
+
+        dashSpeed = (dir.normalized.x != 0) ? 25 : 10;
+
+        rb.velocity += dir.normalized * dashSpeed;
+        StartCoroutine(DashWait());
+    }
+
+    IEnumerator DashWait()
+    {
+        rb.gravityScale = 0f;
+
+        isDashing = true;
+
+        yield return new WaitForSeconds(1f);
+
+        rb.gravityScale = 3f;
+
+        isDashing = false;
+    }
+}
+
+public enum PlayerType
+{
+    Player1,
+    Player2
 }

@@ -7,7 +7,7 @@ namespace Dlog.Runtime {
         public DlogObject DlogObject;
 
         #region Inspector Data
-        public string CurrentAssetGuid = "68f2e446dbf628242afcc896963b0194";
+        public string CurrentAssetGuid = "89fdc0b3ceecf554f82c638c4fcf0b1e";
         public List<DlogObjectData> PersistentData = new List<DlogObjectData>();
         public StringIntSerializableDictionary PersistentDataIndices = new StringIntSerializableDictionary();
         public DlogObjectData CurrentData {

@@ -6,13 +6,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(DialogueGraph))]
 public class NPCDialogue : MonoBehaviour
 {
     public DialogueGraph DialogueSystem;
     public LineController LineController;
 
     [Header("UI References")]
-    public GameObject SecondaryScreen;  //This is not required. Will be used only if the NPC has a shop, or something related.
     public GameObject PlayerContainer;
     public GameObject NpcContainer;
     public TMP_Text PlayerText;
@@ -23,7 +23,6 @@ public class NPCDialogue : MonoBehaviour
     [SerializeField]
     private bool willStopTime = false;
     private bool isInConversation = false;
-    private bool showingSecondaryScreen;
     private bool showPlayer;
     private bool isPlayerChoosing;
     private bool shouldShowText;
@@ -35,12 +34,10 @@ public class NPCDialogue : MonoBehaviour
     /// If not you can just delete a change for the old inputSystem.
     /// </summary>
     private PlayerControls inputs;
-    private InputActionMap dialogueInputs;
 
     private void Awake()
     {
         inputs = new PlayerControls();
-        dialogueInputs = inputs.Dialogue;
     }
 
     public void CallDialogue()
@@ -53,6 +50,9 @@ public class NPCDialogue : MonoBehaviour
             }
 
             inputs.Dialogue.Enable();
+
+            inputs.Player1.Disable();
+            inputs.Player2.Disable();
 
             DialogueSystem.ResetConversation();
             isInConversation = true;
@@ -99,7 +99,6 @@ public class NPCDialogue : MonoBehaviour
             {
                 //Reset state
                 isInConversation = false;
-                showingSecondaryScreen = false;
                 showPlayer = false;
                 isPlayerChoosing = false;
                 shouldShowText = false;
@@ -111,6 +110,9 @@ public class NPCDialogue : MonoBehaviour
                 Time.timeScale = 1;
 
                 inputs.Dialogue.Disable();
+
+                inputs.Player1.Enable();
+                inputs.Player2.Enable();
 
                 gameObject.SetActive(false);
 
@@ -129,11 +131,19 @@ public class NPCDialogue : MonoBehaviour
             }
             else
             {
+                NpcContainer.SetActive(false);
+
+                textToShow = DialogueSystem.ProgressSelf(0);
+                shouldShowText = true;
+                showPlayer = true;
+
+                /*
                 var currentLines = DialogueSystem.GetCurrentLines();
                 isPlayerChoosing = true;
                 PlayerContainer.SetActive(true);
                 LineController.gameObject.SetActive(true);
                 LineController.Initialize(currentLines);
+                */
             }
         }
     }

@@ -11,9 +11,10 @@ public class ActivatePlatform : MonoBehaviour
     [SerializeField]
     private GameObject platform;
 
-    [HideInInspector]
     public bool isMoving = false;
 
+    [SerializeField]
+    private float speed = 5f;
 
     private void Update()
     {
@@ -24,11 +25,11 @@ public class ActivatePlatform : MonoBehaviour
 
         if (platform.transform.position == A.transform.position)
         {
-            StartCoroutine(Vector3LerpCoroutine(platform, B.transform.position, 5f));
+            StartCoroutine(Vector3LerpCoroutine(platform, B.transform.position, speed));
         }
         if (platform.transform.position == B.transform.position)
         {
-            StartCoroutine(Vector3LerpCoroutine(platform, A.transform.position, 5f));
+            StartCoroutine(Vector3LerpCoroutine(platform, A.transform.position, speed));
         }
     }
 

@@ -389,6 +389,7 @@
 "Assets/Scripts/ActivateColorPlatform.cs"
 "Assets/Scripts/ActivateMovePlatform.cs"
 "Assets/Scripts/ActivatePlatform.cs"
+"Assets/Scripts/BallonTrigger.cs"
 "Assets/Scripts/ButtonActivate.cs"
 "Assets/Scripts/DestructableObstacule.cs"
 "Assets/Scripts/Detection.cs"

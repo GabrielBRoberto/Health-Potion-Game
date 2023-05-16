@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(BoxCollider2D))]
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
@@ -22,7 +21,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float dashSpeed = 10f;
 
-    //private Animator animator;
+    private Animator animator;
 
     [Space]
     [Header("Booleans")]
@@ -53,7 +52,7 @@ public class Player : MonoBehaviour
         inputActions = new PlayerControls();
 
         rb = gameObject.GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
         startPosition = transform.position;
 
@@ -217,7 +216,21 @@ public class Player : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        //animator.SetFloat("Speed", speedValue);
+        animator.SetFloat("Speed", speedValue);
+        animator.SetBool("onGround", isGrounded);
+
+        if (inputActions.Player1.Jump.triggered)
+        {
+            animator.SetTrigger("Jump");
+        }
+        if (inputActions.Player2.Dash.triggered)
+        {
+            animator.SetTrigger("Dash");
+        }
+        if (inputActions.Player2.Jump.triggered)
+        {
+            animator.SetTrigger("Jump");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

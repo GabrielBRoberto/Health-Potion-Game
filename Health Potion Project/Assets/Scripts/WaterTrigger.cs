@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class WaterTrigger : MonoBehaviour
 {
+    [SerializeField] private GameObject restorePoint;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<Player>() != null)
         {
-            if (collision.GetComponent<Player>().type == PlayerType.Player1)
+            Player player= collision.GetComponent<Player>();
+
+            if (player.type == PlayerType.Player1)
             {
-                collision.GetComponent<Player>().OnWaterHit();
+                player.gameObject.transform.parent = restorePoint.transform;
             }
         }
     }

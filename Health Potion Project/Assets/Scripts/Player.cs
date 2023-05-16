@@ -1,4 +1,3 @@
-using Dlog.Runtime;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -240,11 +239,6 @@ public class Player : MonoBehaviour
             if (collision.tag == "Item")
             {
                 collision.GetComponent<GetItemActivate>().Active();
-            }
-
-            if (collision.tag == "Dialogue")
-            {
-                collision.GetComponent<DialogueActivate>().Active();
             }
         }
 

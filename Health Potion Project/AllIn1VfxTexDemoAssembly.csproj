@@ -56,9 +56,9 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AllIn1VfxToolkit\Demo &amp; Assets\Textures Demo\Scripts\AllIn1DemoScaleTween.cs" />
-    <Compile Include="Assets\AllIn1VfxToolkit\Demo &amp; Assets\Textures Demo\Scripts\All1VfxDemoTextureCollection.cs" />
     <Compile Include="Assets\AllIn1VfxToolkit\Demo &amp; Assets\Textures Demo\Scripts\AllIn1VfxTextureDemoManager.cs" />
+    <Compile Include="Assets\AllIn1VfxToolkit\Demo &amp; Assets\Textures Demo\Scripts\All1VfxDemoTextureCollection.cs" />
+    <Compile Include="Assets\AllIn1VfxToolkit\Demo &amp; Assets\Textures Demo\Scripts\AllIn1DemoScaleTween.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AllIn1VfxToolkit\Demo &amp; Assets\Textures Demo\Scripts\AllIn1VfxTexDemoAssembly.asmdef" />

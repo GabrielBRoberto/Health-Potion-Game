@@ -325,7 +325,11 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 -r:"D:/UnityProjects/Health-Potion-Game/Health Potion Project/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+=======
+-r:"C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+>>>>>>> Stashed changes
 =======
 -r:"C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 >>>>>>> Stashed changes

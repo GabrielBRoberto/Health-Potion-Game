@@ -85,7 +85,11 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_55BD888F96FEEDEF.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_95116959E8292DD1.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_8D0A09979F6DB5F5.mvfrm
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Library\Bee\artifacts\mvdfrm\Unity.Burst.Unsafe.dll_F3C7E6E3D7AEC52E.mvfrm
+=======
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Unsafe.dll_DB878FAA0CD35E50.mvfrm
+>>>>>>> Stashed changes
 =======
 Library\Bee\artifacts\mvdfrm\Unity.Burst.Unsafe.dll_DB878FAA0CD35E50.mvfrm
 >>>>>>> Stashed changes

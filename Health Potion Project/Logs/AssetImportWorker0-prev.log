@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16197 MB
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 7985 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
+C:/Users/lunee/Downloads/Rupture/Health Potion Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51816
-Successfully changed project path to: C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
-C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
+59196
+Successfully changed project path to: C:/Users/lunee/Downloads/Rupture/Health Potion Project
+C:/Users/lunee/Downloads/Rupture/Health Potion Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,115 +47,116 @@ C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19180] Host "[IP] 192.168.15.8 [Port] 0 [Flags] 2 [Guid] 2847111279 [EditorId] 2847111279 [Version] 1048832 [Id] WindowsEditor(7,MatMateus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8540] Host "[IP] 192.168.15.7 [Port] 0 [Flags] 2 [Guid] 3494958154 [EditorId] 3494958154 [Version] 1048832 [Id] WindowsEditor(7,Lara) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19180] Host "[IP] 192.168.15.8 [Port] 0 [Flags] 2 [Guid] 2847111279 [EditorId] 2847111279 [Version] 1048832 [Id] WindowsEditor(7,MatMateus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8540] Host "[IP] 192.168.15.7 [Port] 0 [Flags] 2 [Guid] 3494958154 [EditorId] 3494958154 [Version] 1048832 [Id] WindowsEditor(7,Lara) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 247.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 966.45 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project/Assets
+[Subsystems] Discovering subsystems at path C:/Users/lunee/Downloads/Rupture/Health Potion Project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce MX110 (ID=0x174e)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
     Vendor:   NVIDIA
-    VRAM:     2008 MB
-    Driver:   31.0.15.3141
+    VRAM:     3962 MB
+    Driver:   30.0.15.1272
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007951 seconds.
+Registered in 0.016161 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 191.83 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 175.08 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.323 seconds
+- Completed reload, in  1.252 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1324ms)
-		BeginReloadAssembly (139ms)
+	ReloadAssembly (1252ms)
+		BeginReloadAssembly (276ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (954ms)
-			LoadAssemblies (134ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (332ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (752ms)
+			LoadAssemblies (250ms)
+			RebuildTransferFunctionScriptingTraits (4ms)
+			SetupTypeCache (223ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (454ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (412ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (192ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (172ms)
-				ProcessInitializeOnLoadMethodAttributes (72ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (175ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010220 seconds.
+Registered in 0.035712 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\mateu\OneDrive\Documentos\GitHub\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\mateu\OneDrive\Documentos\GitHub\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 198.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 173.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.169 seconds
+- Completed reload, in  2.887 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2171ms)
-		BeginReloadAssembly (156ms)
+	ReloadAssembly (2888ms)
+		BeginReloadAssembly (204ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (1821ms)
-			LoadAssemblies (130ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (2506ms)
+			LoadAssemblies (264ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (520ms)
+			SetupTypeCache (412ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (120ms)
-			SetupLoadedEditorAssemblies (979ms)
+			RebuildScriptCaches (97ms)
+			SetupLoadedEditorAssemblies (1725ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (199ms)
-				BeforeProcessingInitializeOnLoad (173ms)
-				ProcessInitializeOnLoadAttributes (464ms)
-				ProcessInitializeOnLoadMethodAttributes (130ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (174ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (1226ms)
+				ProcessInitializeOnLoadMethodAttributes (135ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 2.26 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 1.90 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5790 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 59 unused Assets / (0.8 MB). Loaded Objects now: 6246.
-Memory consumption went from 232.9 MB to 232.1 MB.
-Total: 10.346900 ms (FindLiveObjects: 0.989200 ms CreateObjectMapping: 1.023000 ms MarkObjects: 7.694200 ms  DeleteObjects: 0.638000 ms)
+Memory consumption went from 233.1 MB to 232.3 MB.
+Total: 9.724800 ms (FindLiveObjects: 0.831800 ms CreateObjectMapping: 0.645100 ms MarkObjects: 7.756300 ms  DeleteObjects: 0.489700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -163,31 +164,454 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 14576.721317 seconds.
-  path: Assets/PlayerControls.inputactions
-  artifactKey: Guid(777426f631c7ccf4fb20d4cfb2264a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerControls.inputactions using Guid(777426f631c7ccf4fb20d4cfb2264a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4636a2da93bbc1dd29a73ab1ea8e92') in 0.080295 seconds 
+  Time since last request: 609973.316805 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(353e631528718f341b66a04070040974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(353e631528718f341b66a04070040974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8cbaf25b38b4b511c94e38d8504eb0') in 0.180773 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.343723 seconds.
-  path: Assets/Cachoeira
-  artifactKey: Guid(f4459b44cd1387c4bb40ce97e84c136f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cachoeira using Guid(f4459b44cd1387c4bb40ce97e84c136f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb893f436e4a8d9c9648efe7ad39bca') in 0.013517 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.136188 seconds.
+  Time since last request: 170.476129 seconds.
   path: Assets/Scenes
   artifactKey: Guid(109e9bdd0fcc649c5bc59085c35bdc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(109e9bdd0fcc649c5bc59085c35bdc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc551c28631bb03ca9b61942ea6fe31a') in 0.013565 seconds 
+Start importing Assets/Scenes using Guid(109e9bdd0fcc649c5bc59085c35bdc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc551c28631bb03ca9b61942ea6fe31a') in 0.049343 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.542374 seconds.
+  Time since last request: 1.219346 seconds.
   path: Assets/Scenes/Level_3.unity
   artifactKey: Guid(5e4b1258aa9e8564c92fa5c480c46489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level_3.unity using Guid(5e4b1258aa9e8564c92fa5c480c46489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e958e1d2afc5c704432e05b26aa9e0a') in 0.012136 seconds 
+Start importing Assets/Scenes/Level_3.unity using Guid(5e4b1258aa9e8564c92fa5c480c46489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023a1b02dfdcc61f82a5de30737734e1') in 0.007961 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.341841 seconds.
-  path: Assets/Scenes/Level_2.unity
-  artifactKey: Guid(1999d23176cc0934fb2e3423a0a3c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level_2.unity using Guid(1999d23176cc0934fb2e3423a0a3c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3581d2d16013211bb061b6bab1423c5c') in 0.010391 seconds 
+  Time since last request: 34.901116 seconds.
+  path: Assets/Cachoeira
+  artifactKey: Guid(f4459b44cd1387c4bb40ce97e84c136f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira using Guid(f4459b44cd1387c4bb40ce97e84c136f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0552c5311c149a094cdf87453db256e2') in 0.015795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.765565 seconds.
+  path: Assets/Cachoeira/CachoeiraShaderGraph.shadergraph
+  artifactKey: Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/CachoeiraShaderGraph.shadergraph using Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ad1fbec22df24abdfc183158f1a59d') in 0.162169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.287305 seconds.
+  path: Assets/Cachoeira/Cachoeira.png
+  artifactKey: Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Cachoeira.png using Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232e1dab9e70a57c1dc46e3357b1aa38') in 2.890690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.046721 seconds.
+  path: Assets/Cachoeira/Cachoeira.png
+  artifactKey: Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Cachoeira.png using Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad1ecdb45f67b87a9c5cca7ab9dfeeb') in 0.023149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.604048 seconds.
+  path: Assets/Cachoeira/Cachoeira.png
+  artifactKey: Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Cachoeira.png using Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4e6501f277c189be227fdd7501dbeb') in 0.043196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.097885 seconds.
+  path: Assets/Cachoeira/Cachoeira.png
+  artifactKey: Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Cachoeira.png using Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f723ecd94d5073150e94d017f29f42') in 0.021293 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017357 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.885 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3897ms)
+		BeginReloadAssembly (1839ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (297ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1048ms)
+		EndReloadAssembly (1873ms)
+			LoadAssemblies (327ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (510ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (984ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (165ms)
+				ProcessInitializeOnLoadAttributes (642ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5638 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 6267.
+Memory consumption went from 230.2 MB to 229.4 MB.
+Total: 14.266900 ms (FindLiveObjects: 0.610200 ms CreateObjectMapping: 0.748700 ms MarkObjects: 12.523700 ms  DeleteObjects: 0.382800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1008.223767 seconds.
+  path: Assets/Cachoeira/CachoeiraShader.shader
+  artifactKey: Guid(795ea9276904a334d8c35bbc9133678e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/CachoeiraShader.shader using Guid(795ea9276904a334d8c35bbc9133678e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ba020c2f29fdf7ce1dfdc50a2f61aa') in 0.238670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.055534 seconds.
+  path: Assets/Cachoeira/Cachoeira.cs
+  artifactKey: Guid(74a71eb239c59c746bb11cba99f65cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Cachoeira.cs using Guid(74a71eb239c59c746bb11cba99f65cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a35b263fe9c04d604ed5221c1bacb7') in 0.037416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.965011 seconds.
+  path: Assets/Cachoeira/materialCachoeira.mat
+  artifactKey: Guid(a0ce12aabcc927f43b622dc3ec4bf13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/materialCachoeira.mat using Guid(a0ce12aabcc927f43b622dc3ec4bf13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ca6cc173c7b669303fdb6ee415c255') in 1.238400 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017683 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.966 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2969ms)
+		BeginReloadAssembly (1025ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (38ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (673ms)
+		EndReloadAssembly (1771ms)
+			LoadAssemblies (383ms)
+			RebuildTransferFunctionScriptingTraits (2ms)
+			SetupTypeCache (655ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (101ms)
+			SetupLoadedEditorAssemblies (604ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (377ms)
+				ProcessInitializeOnLoadMethodAttributes (89ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.50 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5646 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 6365.
+Memory consumption went from 233.3 MB to 232.6 MB.
+Total: 16.427700 ms (FindLiveObjects: 0.960400 ms CreateObjectMapping: 1.549600 ms MarkObjects: 12.958000 ms  DeleteObjects: 0.958100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.031233 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\lunee\Downloads\Rupture\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.840 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4842ms)
+		BeginReloadAssembly (413ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (44ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (188ms)
+		EndReloadAssembly (4179ms)
+			LoadAssemblies (203ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1063ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (160ms)
+			SetupLoadedEditorAssemblies (851ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (163ms)
+				ProcessInitializeOnLoadAttributes (560ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5646 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 6380.
+Memory consumption went from 233.7 MB to 233.0 MB.
+Total: 5.572300 ms (FindLiveObjects: 0.474600 ms CreateObjectMapping: 0.564100 ms MarkObjects: 3.791400 ms  DeleteObjects: 0.740800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 186.508335 seconds.
+  path: Assets/Cachoeira/materialCachoeira.mat
+  artifactKey: Guid(a0ce12aabcc927f43b622dc3ec4bf13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/materialCachoeira.mat using Guid(a0ce12aabcc927f43b622dc3ec4bf13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a59756123401c1e354bef9e51963998') in 0.271563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.057923 seconds.
+  path: Assets/Cachoeira/Cachoeira.png
+  artifactKey: Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Cachoeira.png using Guid(a1f249a984bc23c46a86fc253b8302ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd877bb42090e483c221002f778d621e') in 0.023650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 139.487162 seconds.
+  path: Assets/Cachoeira/teste.shadergraph
+  artifactKey: Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.shadergraph using Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ed76917cad59b935dd913e30e14e59') in 0.062739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.037960 seconds.
+  path: Assets/Cachoeira/shaderCachoeira.shader
+  artifactKey: Guid(0e778ba7bc42be946ac1a75e3ba796fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/shaderCachoeira.shader using Guid(0e778ba7bc42be946ac1a75e3ba796fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62133828cd73da75f6a45723050a9e2a') in 0.050190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.683121 seconds.
+  path: Assets/Cachoeira/shaderCachoeira.shader
+  artifactKey: Guid(0e778ba7bc42be946ac1a75e3ba796fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/shaderCachoeira.shader using Guid(0e778ba7bc42be946ac1a75e3ba796fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886fb91c28dafbfb98e4987cc5ea4f84') in 0.014206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.868530 seconds.
+  path: Assets/Cachoeira/shaderCachoeira.shader
+  artifactKey: Guid(0e778ba7bc42be946ac1a75e3ba796fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/shaderCachoeira.shader using Guid(0e778ba7bc42be946ac1a75e3ba796fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec401fcf9ed686f1c87d8fbc2058f43') in 0.010345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 156.963549 seconds.
+  path: Assets/Cachoeira/cachoeiraShaderGraph.shadergraph
+  artifactKey: Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/cachoeiraShaderGraph.shadergraph using Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ded576f9a84ba77bc88aa362f186c06') in 0.031418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 207.114213 seconds.
+  path: Assets/Cachoeira/cachoeiraMaterial.mat
+  artifactKey: Guid(4130ee35b4266784da2df8a46bac36ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/cachoeiraMaterial.mat using Guid(4130ee35b4266784da2df8a46bac36ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0078901f78319c18fdbb1736db34af7c') in 0.336334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.334249 seconds.
+  path: Assets/Cachoeira/cachoeiraMaterial.mat
+  artifactKey: Guid(4130ee35b4266784da2df8a46bac36ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/cachoeiraMaterial.mat using Guid(4130ee35b4266784da2df8a46bac36ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e8d08359834954b2ada697d768507c') in 0.032511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.799816 seconds.
+  path: Assets/Cachoeira/cachoeiraShadergraph2.shadergraph
+  artifactKey: Guid(0482906d61165874a999d6ee8197aedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/cachoeiraShadergraph2.shadergraph using Guid(0482906d61165874a999d6ee8197aedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd757140a3a5cf90bfee2c3db2a1f1f0b') in 0.013140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 116.221089 seconds.
+  path: Assets/Cachoeira/Shader Graphs_cachoeiraShaderGraph.mat
+  artifactKey: Guid(d7ab6afdf060373458646b8517452460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Shader Graphs_cachoeiraShaderGraph.mat using Guid(d7ab6afdf060373458646b8517452460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e299065d3fa31170b2a7e1d47c0807b0') in 0.066884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.401264 seconds.
+  path: Assets/Cachoeira/teste.shadergraph
+  artifactKey: Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.shadergraph using Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa38281e7d05496d4e2b960a4a5d7533') in 0.015888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 208.682572 seconds.
+  path: Assets/Cachoeira/Shader Graphs_teste.mat
+  artifactKey: Guid(ef7430210ad0baf47bf98c8629f76e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Shader Graphs_teste.mat using Guid(ef7430210ad0baf47bf98c8629f76e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42941542933ba2491c7f058ffb38a9d1') in 0.308929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.141713 seconds.
+  path: Assets/Cachoeira/testecacho.mat
+  artifactKey: Guid(348188bcf217a6649a706346673edb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/testecacho.mat using Guid(348188bcf217a6649a706346673edb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3c52a7caa47283ad6cad0087fbe2fb') in 0.037763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.607808 seconds.
+  path: Assets/Cachoeira/shaderGraphCachoeira.shadergraph
+  artifactKey: Guid(f03de3c176327aa498e9c1e35edd61c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/shaderGraphCachoeira.shadergraph using Guid(f03de3c176327aa498e9c1e35edd61c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad572b1e5e979687b58893be0be20eb') in 0.021863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 237.771893 seconds.
+  path: Assets/Cachoeira/testematerial.mat
+  artifactKey: Guid(06d1ad5813cc5bd44b156fdc59c0db39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/testematerial.mat using Guid(06d1ad5813cc5bd44b156fdc59c0db39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b9185e39bf82f90219918c672df163') in 0.764019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.363593 seconds.
+  path: Assets/Cachoeira/teste.shadergraph
+  artifactKey: Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.shadergraph using Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c090e8da3f404eb7ce03714b56270b47') in 0.019883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.547230 seconds.
+  path: Assets/Cachoeira/testednv.shadergraph
+  artifactKey: Guid(22cbdd3d3eadd9741b407dd2c447da28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/testednv.shadergraph using Guid(22cbdd3d3eadd9741b407dd2c447da28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e754ad577554f53e3ae13664f3a0ec') in 0.011846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 228.843842 seconds.
+  path: Assets/Cachoeira/testematerial.mat
+  artifactKey: Guid(06d1ad5813cc5bd44b156fdc59c0db39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/testematerial.mat using Guid(06d1ad5813cc5bd44b156fdc59c0db39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8572f4c105040f866e71935a18bd9c35') in 0.240852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.183118 seconds.
+  path: Assets/Cachoeira/testematerial.mat
+  artifactKey: Guid(06d1ad5813cc5bd44b156fdc59c0db39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/testematerial.mat using Guid(06d1ad5813cc5bd44b156fdc59c0db39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4325f411c7944b2e0cf56cb2982241b5') in 0.061144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 155.853795 seconds.
+  path: Assets/Cachoeira/teste.mat
+  artifactKey: Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.mat using Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417dcb873f0dafabe2ace5fbb5c98d8f') in 0.510109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.204075 seconds.
+  path: Assets/Cachoeira/CachoeiraShaderGraph.shadergraph
+  artifactKey: Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/CachoeiraShaderGraph.shadergraph using Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7538dec5d5988076286683f2ada238e') in 0.010970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 119.864712 seconds.
+  path: Assets/Cachoeira/Shadeeer.mat
+  artifactKey: Guid(92c3c283abca02e4888d10b3d8e9a802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Shadeeer.mat using Guid(92c3c283abca02e4888d10b3d8e9a802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c60861140a70f8d8845dc07029c818a') in 0.032190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.532998 seconds.
+  path: Assets/Cachoeira/teste.mat
+  artifactKey: Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.mat using Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960ab2c44b832a12d67158ec2cb3b363') in 0.022558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.256705 seconds.
+  path: Assets/Cachoeira/Shader Graphs_CachoeiraShaderGraph.mat
+  artifactKey: Guid(d7ab6afdf060373458646b8517452460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Shader Graphs_CachoeiraShaderGraph.mat using Guid(d7ab6afdf060373458646b8517452460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4137b5a5cf2c2d6fb5e33ac3e6b9aebc') in 0.032432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.100974 seconds.
+  path: Assets/Cachoeira/NewSurfaceShader.shader
+  artifactKey: Guid(5dd279f77a3cc9446bf69899a48c9802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/NewSurfaceShader.shader using Guid(5dd279f77a3cc9446bf69899a48c9802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301f0a695f9dfe72d011b853356c0059') in 0.024666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.325522 seconds.
+  path: Assets/Cachoeira/cachoeiraShaderGraph.shadergraph
+  artifactKey: Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/cachoeiraShaderGraph.shadergraph using Guid(d42182213de003340bd5dc485837c970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6cfa7f11fa009b0b7c7574bf99810a') in 0.006257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.895975 seconds.
+  path: Assets/Cachoeira/nentendooo.mat
+  artifactKey: Guid(2e4c37143533e574fb4f13ee738baf71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/nentendooo.mat using Guid(2e4c37143533e574fb4f13ee738baf71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d53d7d19f5f156b6b4c29e16531fa12') in 0.032388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.868454 seconds.
+  path: Assets/Cachoeira/Shader Graphs_cachoeiraShaderGraph.mat
+  artifactKey: Guid(d7ab6afdf060373458646b8517452460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/Shader Graphs_cachoeiraShaderGraph.mat using Guid(d7ab6afdf060373458646b8517452460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141c4fc4861384cecaa23785e5e92c86') in 0.026415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.471667 seconds.
+  path: Assets/Cachoeira/shaderGraphCachoeira.shadergraph
+  artifactKey: Guid(f03de3c176327aa498e9c1e35edd61c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/shaderGraphCachoeira.shadergraph using Guid(f03de3c176327aa498e9c1e35edd61c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97d3fd1193454432ad59d2a73c600a7') in 0.011902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 149.281569 seconds.
+  path: Assets/Cachoeira/teste.mat
+  artifactKey: Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.mat using Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1125e8726488e7f6bd45afd176290c4b') in 0.041676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.834791 seconds.
+  path: Assets/Cachoeira/teste.mat
+  artifactKey: Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.mat using Guid(ea92e7ef224d0fe41beea921c4aa550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cecebb18d2b64ea72494a7484693064c') in 0.033749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.264404 seconds.
+  path: Assets/Cachoeira/shaderGraphCachoeira.shadergraph
+  artifactKey: Guid(f03de3c176327aa498e9c1e35edd61c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/shaderGraphCachoeira.shadergraph using Guid(f03de3c176327aa498e9c1e35edd61c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520fc064c702e406031162ac965e1a0a') in 0.008211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.337946 seconds.
+  path: Assets/Cachoeira/este.shadergraph
+  artifactKey: Guid(ae7574c7eedd4b2468312cc36e138fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/este.shadergraph using Guid(ae7574c7eedd4b2468312cc36e138fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e16c58166812051110d6eef19616bd0') in 0.012435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 318.597191 seconds.
+  path: Assets/Cachoeira/teste.shadergraph
+  artifactKey: Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cachoeira/teste.shadergraph using Guid(2372459856f65304cad1db4b8903de56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0933530444c2aa940550a42b929114a0') in 0.124373 seconds 

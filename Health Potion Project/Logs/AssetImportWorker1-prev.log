@@ -1,5 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16326 MB
@@ -17,6 +18,9 @@ OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'pt' Physical 
 OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16197 MB
 >>>>>>>> Stashed changes:Health Potion Project/Logs/AssetImportWorker1.log
 >>>>>>> Stashed changes
+=======
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16326 MB
+>>>>>>> main
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -27,12 +31,16 @@ C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> main
 D:/UnityProjects/Health-Potion-Game/Health Potion Project
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
+<<<<<<< HEAD
 59779
 Successfully changed project path to: D:/UnityProjects/Health-Potion-Game/Health Potion Project
 D:/UnityProjects/Health-Potion-Game/Health Potion Project
@@ -78,6 +86,11 @@ Successfully changed project path to: C:/Users/mateu/OneDrive/Documentos/GitHub/
 C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
 >>>>>>>> Stashed changes:Health Potion Project/Logs/AssetImportWorker1.log
 >>>>>>> Stashed changes
+=======
+65355
+Successfully changed project path to: D:/UnityProjects/Health-Potion-Game/Health Potion Project
+D:/UnityProjects/Health-Potion-Game/Health Potion Project
+>>>>>>> main
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -107,6 +120,7 @@ C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Player connection [12412] Host "[IP] 192.168.15.43 [Port] 0 [Flags] 2 [Guid] 1095671806 [EditorId] 1095671806 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HAIIK4K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
@@ -114,6 +128,13 @@ Player connection [12412] Host "[IP] 192.168.15.43 [Port] 0 [Flags] 2 [Guid] 109
 Player connection [12412] Host "[IP] 192.168.15.43 [Port] 0 [Flags] 2 [Guid] 1095671806 [EditorId] 1095671806 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HAIIK4K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 605.18 ms, found 4 plugins.
+=======
+Player connection [8080] Host "[IP] 192.168.15.43 [Port] 0 [Flags] 2 [Guid] 2180432209 [EditorId] 2180432209 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HAIIK4K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8080] Host "[IP] 192.168.15.43 [Port] 0 [Flags] 2 [Guid] 2180432209 [EditorId] 2180432209 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HAIIK4K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 151.24 ms, found 4 plugins.
+>>>>>>> main
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -125,6 +146,7 @@ Direct3D:
     Vendor:   ATI
     VRAM:     8170 MB
     Driver:   31.0.14051.1000
+<<<<<<< HEAD
 =======
 Player connection [12192] Host "[IP] 192.168.15.8 [Port] 0 [Flags] 2 [Guid] 1622896766 [EditorId] 1622896766 [Version] 1048832 [Id] WindowsEditor(7,MatMateus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
@@ -192,10 +214,13 @@ Direct3D:
     Driver:   31.0.15.3141
 >>>>>>>> Stashed changes:Health Potion Project/Logs/AssetImportWorker1.log
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
@@ -282,10 +307,26 @@ Domain Reload Profiling:
 		BeginReloadAssembly (75ms)
 >>>>>>>> Stashed changes:Health Potion Project/Logs/AssetImportWorker1.log
 >>>>>>> Stashed changes
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009149 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 142.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.785 seconds
+Domain Reload Profiling:
+	ReloadAssembly (785ms)
+		BeginReloadAssembly (93ms)
+>>>>>>> main
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 			CreateAndSetChildDomain (1ms)
 <<<<<<< Updated upstream
@@ -377,19 +418,41 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadMethodAttributes (73ms)
 >>>>>>>> Stashed changes:Health Potion Project/Logs/AssetImportWorker1.log
 >>>>>>> Stashed changes
+=======
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (565ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (119ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (357ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (142ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+>>>>>>> main
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Registered in 0.007187 seconds.
+=======
+Registered in 0.008048 seconds.
+>>>>>>> main
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\Health-Potion-Game\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\Health-Potion-Game\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 181.42 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -1521,10 +1584,20 @@ Domain Reload Profiling:
 	ReloadAssembly (1690ms)
 		BeginReloadAssembly (152ms)
 >>>>>>> Stashed changes
+=======
+Refreshing native plugins compatible for Editor in 148.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.621 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1622ms)
+		BeginReloadAssembly (133ms)
+>>>>>>> main
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 			CreateAndSetChildDomain (25ms)
 		EndReloadAssembly (3495ms)
@@ -1543,12 +1616,31 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadMethodAttributes (1733ms)
 				AfterProcessingInitializeOnLoad (11ms)
 >>>>>>> Stashed changes
+=======
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1356ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (776ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (148ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (374ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (11ms)
+>>>>>>> main
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
 Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
@@ -5050,6 +5142,15 @@ Unloading 59 unused Assets / (0.8 MB). Loaded Objects now: 6246.
 Memory consumption went from 232.9 MB to 232.1 MB.
 Total: 6.215000 ms (FindLiveObjects: 0.677600 ms CreateObjectMapping: 0.674300 ms MarkObjects: 4.444400 ms  DeleteObjects: 0.417000 ms)
 >>>>>>>> Stashed changes:Health Potion Project/Logs/AssetImportWorker1.log
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5791 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (0.8 MB). Loaded Objects now: 6247.
+Memory consumption went from 232.9 MB to 232.1 MB.
+Total: 4.324700 ms (FindLiveObjects: 0.476700 ms CreateObjectMapping: 0.433000 ms MarkObjects: 3.088700 ms  DeleteObjects: 0.324800 ms)
+>>>>>>> main
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -5063,6 +5164,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
 <<<<<<<< Updated upstream:Health Potion Project/Logs/AssetImportWorker0-prev.log
 <<<<<<< HEAD
   Time since last request: 463.022051 seconds.
@@ -9483,3 +9585,9 @@ Start importing Assets/Scenes/Level_3.unity using Guid(5e4b1258aa9e8564c92fa5c48
 Start importing Assets/PlayerControls.cs using Guid(05d6c772814e1794ca080ef648ce9248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db580968f8473b2e4d6b3f9cf902e045') in 0.047400 seconds 
 >>>>>>>> Stashed changes:Health Potion Project/Logs/AssetImportWorker1.log
 >>>>>>> Stashed changes
+=======
+  Time since last request: 522013.689655 seconds.
+  path: Assets/Animations/Player/Player2AnimatorController.controller
+  artifactKey: Guid(633d0d9db2ae9d64aa4c8a5f4d013f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Player2AnimatorController.controller using Guid(633d0d9db2ae9d64aa4c8a5f4d013f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148099d8553181cdba12d18617052c52') in 0.072775 seconds 
+>>>>>>> main

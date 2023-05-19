@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e35ec2f62d58ae84b96ccf1efbbc269b
+guid: 85d5cc3e81d97ea4db7aaadb705dbf62
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PJ1_JUMP_0
+      name: PJ2IdleMovC_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a8b9a5e9829444e9c4b9baf2e73519
-      internalID: -837926253
+      spriteID: 50f30e945cc9c5746bfe1eabee42828c
+      internalID: -612594572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_JUMP_1
+      name: PJ2IdleMovC_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e72151488e7f5234ba2040ac174f561f
-      internalID: -1556243704
+      spriteID: bc0f78b7311de6a4caf6650db1374439
+      internalID: -2018822501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_JUMP_2
+      name: PJ2IdleMovC_2
       rect:
         serializedVersion: 2
         x: 64
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29a837bc9f52fad49b46ce56e80e35e3
-      internalID: -134783880
+      spriteID: 3fe88836f0e35984fac2dc305b045879
+      internalID: -1758932898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_JUMP_3
+      name: PJ2IdleMovC_3
       rect:
         serializedVersion: 2
         x: 96
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74d1a1cfd54bff9498cbe476bf1bdad1
-      internalID: 839429152
+      spriteID: feda5b2f73641e442b3f8342f6b0d932
+      internalID: 844052433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_JUMP_4
+      name: PJ2IdleMovC_4
       rect:
         serializedVersion: 2
         x: 128
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bbd6610d3c9522499b18dbe68772749
-      internalID: 676461356
+      spriteID: 220d2991b837eda418904fbda73a8902
+      internalID: 1820487734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_JUMP_5
+      name: PJ2IdleMovC_5
       rect:
         serializedVersion: 2
         x: 160
@@ -224,29 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 758d1a479f8c29745bd17d8ffe9b630d
-      internalID: -669794628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PJ1_JUMP_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c097bf80b9484c4e8ed5884992aeeea
-      internalID: -174453774
+      spriteID: 833497708e9ed4549a7abb2a297ea047
+      internalID: 2124120599
       vertices: []
       indices: 
       edges: []
@@ -262,13 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PJ1_JUMP_5: -669794628
-      PJ1_JUMP_1: -1556243704
-      PJ1_JUMP_6: -174453774
-      PJ1_JUMP_2: -134783880
-      PJ1_JUMP_3: 839429152
-      PJ1_JUMP_0: -837926253
-      PJ1_JUMP_4: 676461356
+      PJ2IdleMovC_1: -2018822501
+      PJ2IdleMovC_5: 2124120599
+      PJ2IdleMovC_0: -612594572
+      PJ2IdleMovC_3: 844052433
+      PJ2IdleMovC_2: -1758932898
+      PJ2IdleMovC_4: 1820487734
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

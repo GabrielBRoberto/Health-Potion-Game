@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f61ec8a8b61fd74d95a3a07edc89cf6
+guid: 8a632080f4569034b9305e665a823ddd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PJ1_IDLE_0
+      name: PJ1_AjustesIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a13b71e22f7b1ac4ba126113fc29ee82
-      internalID: 1611609664
+      spriteID: 0e23b564c13bf774e8f9c900b6742a0c
+      internalID: 1449623217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_IDLE_1
+      name: PJ1_AjustesIdle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fa74177ef3c1974fa6aba38d7f1b6be
-      internalID: 1551143844
+      spriteID: 9e1bb700892cbce4690eb5c06b520e98
+      internalID: 767009861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_IDLE_2
+      name: PJ1_AjustesIdle_2
       rect:
         serializedVersion: 2
         x: 64
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd126476880ef3443bd1fb1370ea27d4
-      internalID: -740764175
+      spriteID: f9f00fdc0ad546c42a16ead7e8ec80a8
+      internalID: 1839332415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_IDLE_3
+      name: PJ1_AjustesIdle_3
       rect:
         serializedVersion: 2
         x: 96
@@ -182,8 +182,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bae02369d72a8148a3d352ad3dde663
-      internalID: -445001623
+      spriteID: a506a1a64364901459842d1a91046275
+      internalID: -1658364122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PJ1_AjustesIdle_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401e17c35a8d0434997b696c76bb130e
+      internalID: -1288898029
       vertices: []
       indices: 
       edges: []
@@ -199,10 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PJ1_IDLE_2: -740764175
-      PJ1_IDLE_0: 1611609664
-      PJ1_IDLE_1: 1551143844
-      PJ1_IDLE_3: -445001623
+      PJ1_AjustesIdle_1: 767009861
+      PJ1_AjustesIdle_0: 1449623217
+      PJ1_AjustesIdle_2: 1839332415
+      PJ1_AjustesIdle_3: -1658364122
+      PJ1_AjustesIdle_4: -1288898029
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

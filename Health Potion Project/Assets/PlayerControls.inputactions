@@ -189,7 +189,7 @@
                 {
                     "name": "",
                     "id": "013cbf67-dbdc-4f15-a0f4-4453459c8a4a",
-                    "path": "<Keyboard>/numpad0",
+                    "path": "<Keyboard>/o",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -211,7 +211,7 @@
                 {
                     "name": "",
                     "id": "6d83b67e-f8d0-4f2b-9b54-b65c6b6695a7",
-                    "path": "<Keyboard>/numpadPeriod",
+                    "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 150f8a2d3d78b2b46ba1269c85c76cfe
+guid: 1d9775bec25d64f4c93b41f2445d64fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PJ1_RUN_0
+      name: PJ1RUNOFI2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6501b93a640d02b438920f7d276faec5
-      internalID: -397192563
+      spriteID: 315e45c17d7be3449bd37614c63d82e2
+      internalID: 1081945641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_RUN_1
+      name: PJ1RUNOFI2_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a6d12f9ee5ebbc4eac453db43a0ff62
-      internalID: -2061366453
+      spriteID: ff902a8c270fda54091c005ba4c27c07
+      internalID: -1229066061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_RUN_2
+      name: PJ1RUNOFI2_2
       rect:
         serializedVersion: 2
         x: 64
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 338f9c9f72b092246b8927abc0fe7f07
-      internalID: -820603390
+      spriteID: 92ca85c9b2bef4c46b9aaf93d7c14b6c
+      internalID: -1784711251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_RUN_3
+      name: PJ1RUNOFI2_3
       rect:
         serializedVersion: 2
         x: 96
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 056e63a8b4e1f1345ae15cb579f53c67
-      internalID: -1463722779
+      spriteID: 2cd4f85e4e864d9438a164cdcc7d9793
+      internalID: 2038370605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_RUN_4
+      name: PJ1RUNOFI2_4
       rect:
         serializedVersion: 2
         x: 128
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ac79c5e95e79cf4eadd049879503635
-      internalID: 318096536
+      spriteID: bea9fc99a08ae264fb3997b27510c243
+      internalID: 1418281681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ1_RUN_5
+      name: PJ1RUNOFI2_5
       rect:
         serializedVersion: 2
         x: 160
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e291bc1b264b5b6409d56f1557a7549b
-      internalID: -1165804591
+      spriteID: c1f307c960f129841b37d2a105bc9f10
+      internalID: 1078209127
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PJ1_RUN_4: 318096536
-      PJ1_RUN_3: -1463722779
-      PJ1_RUN_5: -1165804591
-      PJ1_RUN_0: -397192563
-      PJ1_RUN_1: -2061366453
-      PJ1_RUN_2: -820603390
+      PJ1RUNOFI2_3: 2038370605
+      PJ1RUNOFI2_5: 1078209127
+      PJ1RUNOFI2_2: -1784711251
+      PJ1RUNOFI2_0: 1081945641
+      PJ1RUNOFI2_1: -1229066061
+      PJ1RUNOFI2_4: 1418281681
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

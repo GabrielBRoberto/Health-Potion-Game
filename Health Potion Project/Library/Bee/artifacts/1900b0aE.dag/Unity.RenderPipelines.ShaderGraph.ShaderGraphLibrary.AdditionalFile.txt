@@ -1,9 +1,1 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-D:\UnityProjects\Health-Potion-Game\Health Potion Project
-=======
 C:\Users\mateu\OneDrive\Documentos\GitHub\Health Potion Project
->>>>>>> Stashed changes
-=======
-C:\Users\mateu\OneDrive\Documentos\GitHub\Health Potion Project
->>>>>>> Stashed changes

@@ -9,23 +9,13 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-<<<<<<< Updated upstream
-{ "pid": 0, "tid": 1, "ts": 1684547745364967, "dur": 178057, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547745365014, "dur": 62223, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547745427240, "dur": 106172, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547745533413, "dur": 9610, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547745543673, "dur": 4, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547745543687, "dur": 10, "ph": "X", "name": "", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547745543678, "dur": 33, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-=======
-{ "pid": 0, "tid": 1, "ts": 1684547982857934, "dur": 199394, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547982859391, "dur": 81727, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547982941325, "dur": 105762, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547983047105, "dur": 10223, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547983059929, "dur": 1108, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547983064526, "dur": 900, "ph": "X", "name": "", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684547983062512, "dur": 3424, "ph": "X", "name": "Write chrome-trace events", "args": {} },
->>>>>>> Stashed changes
+{ "pid": 0, "tid": 1, "ts": 1684548211582402, "dur": 175507, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684548211582447, "dur": 51548, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684548211633999, "dur": 114114, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684548211748114, "dur": 9794, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684548211758517, "dur": 5, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684548211758534, "dur": 8, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684548211758523, "dur": 34, "ph": "X", "name": "Write chrome-trace events", "args": {} },
 {}
 
 ]

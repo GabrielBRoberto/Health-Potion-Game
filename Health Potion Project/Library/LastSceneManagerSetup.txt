@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level_3.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Level_2.unity
+=======
+- path: Assets/Scenes/Level.unity
+>>>>>>> RuptureFaculdade
+>>>>>>> parent of a00bd82a (Revert "Level1e3")
   isLoaded: 1
   isActive: 1
   isSubScene: 0

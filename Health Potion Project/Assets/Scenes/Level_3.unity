@@ -114492,11 +114492,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 5}
   m_EdgeRadius: 0
-<<<<<<< HEAD
---- !u!1 &1725039816
-=======
 --- !u!1 &1640161691
->>>>>>> parent of a00bd82a (Revert "Level1e3")
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114504,25 +114500,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 1725039818}
-  - component: {fileID: 1725039817}
-  m_Layer: 0
-  m_Name: caixa (1)
-=======
   - component: {fileID: 1640161692}
   - component: {fileID: 1640161693}
   m_Layer: 0
   m_Name: Grama 2_0 (1)
->>>>>>> parent of a00bd82a (Revert "Level1e3")
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!212 &1725039817
-=======
 --- !u!4 &1640161692
 Transform:
   m_ObjectHideFlags: 0
@@ -114539,17 +114525,12 @@ Transform:
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1640161693
->>>>>>> parent of a00bd82a (Revert "Level1e3")
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1725039816}
-=======
   m_GameObject: {fileID: 1640161691}
->>>>>>> parent of a00bd82a (Revert "Level1e3")
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -114584,28 +114565,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-  m_Sprite: {fileID: 21300000, guid: fd22e1d1dd179f24297a4bcdababd370, type: 3}
-=======
   m_Sprite: {fileID: -1280348998, guid: bbcb71b0fca99b245a358a1cb18f277b, type: 3}
->>>>>>> parent of a00bd82a (Revert "Level1e3")
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-<<<<<<< HEAD
-  m_Size: {x: 2, y: 2}
-=======
   m_Size: {x: 2, y: 1}
->>>>>>> parent of a00bd82a (Revert "Level1e3")
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
---- !u!4 &1725039818
-=======
 --- !u!1 &1669194689
 GameObject:
   m_ObjectHideFlags: 0
@@ -114624,23 +114594,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1669194690
->>>>>>> parent of a00bd82a (Revert "Level1e3")
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1725039816}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.0129495, y: -3.0014243, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_GameObject: {fileID: 1669194689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 110.1, y: 10.48, z: 0}
@@ -114702,7 +114660,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> parent of a00bd82a (Revert "Level1e3")
 --- !u!1 &1753992475
 GameObject:
   m_ObjectHideFlags: 0

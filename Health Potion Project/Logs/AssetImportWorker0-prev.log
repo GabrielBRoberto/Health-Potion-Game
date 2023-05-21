@@ -15,7 +15,7 @@ C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58745
+59698
 Successfully changed project path to: C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
 C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/mateu/OneDrive/Documentos/GitHub/Health Potion Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12012] Host "[IP] 192.168.15.9 [Port] 0 [Flags] 2 [Guid] 3957166731 [EditorId] 3957166731 [Version] 1048832 [Id] WindowsEditor(7,MatMateus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3188] Host "[IP] 192.168.15.9 [Port] 0 [Flags] 2 [Guid] 3084508166 [EditorId] 3084508166 [Version] 1048832 [Id] WindowsEditor(7,MatMateus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12012] Host "[IP] 192.168.15.9 [Port] 0 [Flags] 2 [Guid] 3957166731 [EditorId] 3957166731 [Version] 1048832 [Id] WindowsEditor(7,MatMateus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3188] Host "[IP] 192.168.15.9 [Port] 0 [Flags] 2 [Guid] 3084508166 [EditorId] 3084508166 [Version] 1048832 [Id] WindowsEditor(7,MatMateus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 145.95 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 143.60 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003109 seconds.
+Registered in 0.004566 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 157.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 164.62 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.895 seconds
+- Completed reload, in  0.802 seconds
 Domain Reload Profiling:
-	ReloadAssembly (895ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (802ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (692ms)
-			LoadAssemblies (85ms)
+		EndReloadAssembly (605ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (155ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (433ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (387ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (157ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (198ms)
-				ProcessInitializeOnLoadMethodAttributes (67ms)
+				RefreshPlugins (165ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006092 seconds.
+Registered in 0.008824 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\mateu\OneDrive\Documentos\GitHub\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\mateu\OneDrive\Documentos\GitHub\Health Potion Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 132.17 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.631 seconds
+- Completed reload, in  0.946 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1632ms)
-		BeginReloadAssembly (115ms)
+	ReloadAssembly (947ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1353ms)
-			LoadAssemblies (123ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (662ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (345ms)
+			SetupTypeCache (189ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (745ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (298ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (132ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (365ms)
-				ProcessInitializeOnLoadMethodAttributes (105ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (115ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.40 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5792 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (0.8 MB). Loaded Objects now: 6248.
-Memory consumption went from 232.9 MB to 232.1 MB.
-Total: 4.731800 ms (FindLiveObjects: 0.474800 ms CreateObjectMapping: 0.460200 ms MarkObjects: 3.474600 ms  DeleteObjects: 0.321200 ms)
+Unloading 5742 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (0.8 MB). Loaded Objects now: 6184.
+Memory consumption went from 224.3 MB to 223.5 MB.
+Total: 4.028800 ms (FindLiveObjects: 0.528100 ms CreateObjectMapping: 0.594700 ms MarkObjects: 2.531500 ms  DeleteObjects: 0.373200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,25 +163,43 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 16395.597212 seconds.
-  path: Assets/Sprites/Cenario/ALAVANCA (1).png
-  artifactKey: Guid(b359e0a0efc482847b8d46355aca0a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cenario/ALAVANCA (1).png using Guid(b359e0a0efc482847b8d46355aca0a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12211a2d8ff542bc95ea1ec0cf2c43b6') in 0.134852 seconds 
+  Time since last request: 31793.270684 seconds.
+  path: Assets/Prefabs/espinhos_1.prefab
+  artifactKey: Guid(169adb141faac4a4eafd9a10e3c3f737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/espinhos_1.prefab using Guid(169adb141faac4a4eafd9a10e3c3f737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6252287564b746cfd236a6d8fdefbd40') in 0.145524 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.636475 seconds.
-  path: Assets/Sprites/Cenario 2/Vagalumes.png
-  artifactKey: Guid(72fb25a2d267de74bb90158e2a229e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cenario 2/Vagalumes.png using Guid(72fb25a2d267de74bb90158e2a229e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77828d587e60fcfeba097d781d6f0666') in 0.096434 seconds 
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/caixa.prefab
+  artifactKey: Guid(304a957ef337a9f4e82e4dd9a56c9b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/caixa.prefab using Guid(304a957ef337a9f4e82e4dd9a56c9b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6bba9c6204d784ef9a3946f0cd72a16') in 0.022638 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.007942 seconds.
-  path: Assets/Sprites/Cenario 2/Vagalumes.png
-  artifactKey: Guid(72fb25a2d267de74bb90158e2a229e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cenario 2/Vagalumes.png using Guid(72fb25a2d267de74bb90158e2a229e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a75005c32c06198bd9e37897d2780cb') in 0.013549 seconds 
+  Time since last request: 0.000042 seconds.
+  path: Assets/Prefabs/PlayerContainer.prefab
+  artifactKey: Guid(1ec94d5a84fd3154da4e52d18b5336d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerContainer.prefab using Guid(1ec94d5a84fd3154da4e52d18b5336d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363cd72ed6f6287cf2f1e344e70b844e') in 0.013482 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.799036 seconds.
-  path: Assets/Sprites/Cenario 2/Vagalumes.png
-  artifactKey: Guid(72fb25a2d267de74bb90158e2a229e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cenario 2/Vagalumes.png using Guid(72fb25a2d267de74bb90158e2a229e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a45816b0a8cdd751eeca9f5f9e14621') in 0.034481 seconds 
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/Player2.prefab
+  artifactKey: Guid(121ebe477050bf0428be169174524262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player2.prefab using Guid(121ebe477050bf0428be169174524262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0276a4c945c44a70fd671a3cfd5d3e52') in 0.012034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.195163 seconds.
+  path: Assets/Scenes/Level.unity
+  artifactKey: Guid(61e7bebeba84add429c59acc18783fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level.unity using Guid(61e7bebeba84add429c59acc18783fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c71a2fb927c24120513ecbd5586ccf') in 0.009135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.022511 seconds.
+  path: Assets/Scenes/Level_2.unity
+  artifactKey: Guid(1999d23176cc0934fb2e3423a0a3c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_2.unity using Guid(1999d23176cc0934fb2e3423a0a3c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9d94b80d7752dad54498742dcbf14e') in 0.007671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.943279 seconds.
+  path: Assets/Scenes/Level_3.unity
+  artifactKey: Guid(5e4b1258aa9e8564c92fa5c480c46489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_3.unity using Guid(5e4b1258aa9e8564c92fa5c480c46489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27966d6893c2d4ccb567b79db735931d') in 0.007407 seconds 

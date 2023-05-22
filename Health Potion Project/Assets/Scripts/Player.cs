@@ -9,9 +9,6 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     public PlayerControls inputActions;
 
-    [SerializeField]
-    private InputActionAsset playerActionMap;
-
     [Header("Stats")]
     [SerializeField]
     private float speed = 50f;
@@ -278,6 +275,24 @@ public class Player : MonoBehaviour
             if (inputActions.Player1.Interact.triggered)
             {
                 collision.GetComponent<ActivateMovePlatform>().Active();
+            }
+        }
+
+        if (collision.tag == "PlatformColor")
+        {
+            if (type == PlayerType.Player1)
+            {
+                if (inputActions.Player1.Interact.triggered)
+                {
+                    collision.GetComponent<ActivateColorPlatform>().Active();
+                }
+            }
+            else
+            {
+                if (inputActions.Player2.Interact.triggered)
+                {
+                    collision.GetComponent<ActivateColorPlatform>().Active();
+                }
             }
         }
     }

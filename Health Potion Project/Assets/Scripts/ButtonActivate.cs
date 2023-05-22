@@ -5,19 +5,19 @@ using UnityEngine;
 public class ButtonActivate : Activate
 {
     [SerializeField]
-    private GameObject obstacleGameObject;
+    private GameObject gameObjectToMove;
 
     [SerializeField]
-    private Vector3 closedVector;
+    private Transform closedVector;
     [SerializeField]
-    private Vector3 openVector;
+    private Transform openVector;
 
     public override void Active()
     {
-        obstacleGameObject.transform.position = Vector3.Lerp(openVector, closedVector, Time.deltaTime);
+        gameObjectToMove.transform.position = Vector3.Lerp(openVector.position, closedVector.position, Time.deltaTime);
     }
     public void Desactivate()
     {
-        obstacleGameObject.transform.position = Vector3.Lerp(closedVector, openVector, Time.deltaTime);
+        gameObjectToMove.transform.position = Vector3.Lerp(closedVector.position, openVector.position, Time.deltaTime);
     }
 }

@@ -7,4 +7,6 @@ public class PlatformColor : MonoBehaviour
     public Sprite platformActivated, platformDesactivated;
 
     public bool activate = false;
+
+    public LayerMask activatedLayer;
 }

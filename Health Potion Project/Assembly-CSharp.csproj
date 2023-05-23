@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\ActivatePlatform.cs" />
     <Compile Include="Assets\Scripts\ActivateColorPlatform.cs" />
     <Compile Include="Assets\Cachoeira\waterController.cs" />
+    <Compile Include="Assets\Scripts\PlatformColor.cs" />
     <Compile Include="Assets\Scripts\WaterTrigger.cs" />
     <Compile Include="Assets\Scripts\Activate.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
@@ -75,7 +76,6 @@
     <Compile Include="Assets\Scripts\ButtonActivate.cs" />
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\PlatformColor.cs" />
     <Compile Include="Assets\Main Menu\Scripts\MenuController.cs" />
   </ItemGroup>
   <ItemGroup>

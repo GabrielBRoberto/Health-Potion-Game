@@ -485,7 +485,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -501,7 +501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024d2628dfb7fe74ba383059537479c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerActionMap: {fileID: 0}
   speed: 6.3
   jumpForce: 15
   dashSpeed: 10
@@ -515,6 +514,7 @@ MonoBehaviour:
   canInteract: 0
   interacting: 0
   type: 1
+  respawnPosition: {fileID: 0}
   InteractionIcon: {fileID: 9111562387609592479}
 --- !u!95 &2051722089
 Animator:

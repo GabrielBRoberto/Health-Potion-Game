@@ -25,7 +25,7 @@ public class ActivateColorPlatform : Activate
             platforms[i].GetComponent<SpriteRenderer>().sprite = platforms[i].GetComponent<PlatformColor>().activate ? 
                 platforms[i].GetComponent<PlatformColor>().platformActivated : platforms[i].GetComponent<PlatformColor>().platformDesactivated;
 
-            platforms[i].layer = platforms[i].GetComponent<PlatformColor>().activate ? 9 : 10;
+            platforms[i].layer = platforms[i].GetComponent<PlatformColor>().activate ? platforms[i].GetComponent<PlatformColor>().activatedLayer : 11;
         }
     }
 }

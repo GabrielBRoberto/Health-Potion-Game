@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 97914935}
   - component: {fileID: 97914934}
   - component: {fileID: 97914936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AnomaliaPequenaPj1Horizontal-export
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 116055711}
   m_Layer: 0
   m_Name: Plataforma4
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -595,7 +595,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 11.2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -619,7 +619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123898161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -143.65909, y: 23.191599, z: -10}
+  m_LocalPosition: {x: -260.6774, y: -32.19252, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 164736350}
   m_Layer: 0
   m_Name: Plataforma6
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 282639755}
   - component: {fileID: 282639757}
   - component: {fileID: 282639756}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AnomaliaPequenaPj1Horizontal-export (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 287452660}
   m_Layer: 0
   m_Name: Plataforma0
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1280,7 +1280,7 @@ GameObject:
   - component: {fileID: 299400353}
   m_Layer: 0
   m_Name: Plataforma2
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1474,7 +1474,7 @@ GameObject:
   - component: {fileID: 367501471}
   m_Layer: 0
   m_Name: Plataforma1
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2384,21 +2384,18 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 178.18195, y: 78.218285}
-      - {x: 98.79314, y: 71.31388}
+      - {x: 101.4, y: 68.1}
       - {x: 33.233017, y: 67.129944}
-      - {x: 26.91893, y: 58.0926}
       - {x: -12.891792, y: 55.187073}
       - {x: -12.79274, y: 26.54434}
-      - {x: 60.43843, y: 24.498465}
-      - {x: 60.47644, y: 20.840153}
+      - {x: 28.453644, y: 21.74598}
+      - {x: 28.53444, y: 17.901716}
       - {x: -12.250763, y: 18.403093}
       - {x: -44.262573, y: 18.077616}
       - {x: -44.57776, y: -5.613186}
       - {x: 96.32143, y: -6.480896}
-      - {x: 95.584076, y: 36.974216}
-      - {x: 57.838364, y: 37.388695}
-      - {x: 42.647385, y: 41.980556}
-      - {x: 42.433167, y: 45.288406}
+      - {x: 95.90263, y: 41.3545}
+      - {x: 66.962906, y: 42.739075}
       - {x: 128.12646, y: 44.743896}
       - {x: 177.80432, y: 56.444553}
 --- !u!4 &792773162
@@ -2537,7 +2534,7 @@ GameObject:
   - component: {fileID: 826744137}
   - component: {fileID: 826744136}
   - component: {fileID: 826744138}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AnomaliaHorizontalPJ2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2871,7 +2868,7 @@ GameObject:
   - component: {fileID: 908079630}
   m_Layer: 0
   m_Name: Plataforma7
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41757,7 +41754,7 @@ GameObject:
   - component: {fileID: 960526595}
   - component: {fileID: 960526594}
   - component: {fileID: 960526596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AnomaliaHorizontalPJ1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41986,7 +41983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BoundingShape2D: {fileID: 792773161}
   m_Damping: 0.5
-  m_MaxWindowSize: -1
+  m_MaxWindowSize: 0
 --- !u!114 &1038184812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42009,7 +42006,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1916467525}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 10
+    OrthographicSize: 11.2
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -42033,7 +42030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038184810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -144.04, y: 25.08, z: -10}
+  m_LocalPosition: {x: -273.7, y: -33.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42140,7 +42137,7 @@ GameObject:
   - component: {fileID: 1082822398}
   - component: {fileID: 1082822399}
   - component: {fileID: 1082822400}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plataforma_PJ1_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -42355,7 +42352,7 @@ GameObject:
   - component: {fileID: 1178109225}
   - component: {fileID: 1178109224}
   - component: {fileID: 1178109226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AnomaliaHorizontalPJ2 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -42931,7 +42928,7 @@ GameObject:
   - component: {fileID: 1290493063}
   m_Layer: 0
   m_Name: Plataforma5
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43128,7 +43125,7 @@ GameObject:
   - component: {fileID: 1321459813}
   - component: {fileID: 1321459815}
   - component: {fileID: 1321459814}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AnomaliaPequenaPj2Horizontal (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -85790,7 +85787,7 @@ GameObject:
   - component: {fileID: 1527887869}
   - component: {fileID: 1527887871}
   - component: {fileID: 1527887870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AnomaliaPequenaPj1Horizontal-export (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -86562,7 +86559,7 @@ GameObject:
   - component: {fileID: 1724198073}
   m_Layer: 0
   m_Name: Plataforma3
-  m_TagString: Ground
+  m_TagString: GroundPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86686,7 +86683,7 @@ GameObject:
   - component: {fileID: 1744855179}
   - component: {fileID: 1744855181}
   - component: {fileID: 1744855180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AnomaliaHorizontalPJ2 (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -86904,7 +86901,7 @@ GameObject:
   - component: {fileID: 1850299725}
   - component: {fileID: 1850299727}
   - component: {fileID: 1850299726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plataforma_PJ1_1 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -87285,7 +87282,7 @@ GameObject:
   - component: {fileID: 1976737446}
   - component: {fileID: 1976737445}
   - component: {fileID: 1976737447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AnomaliaPequenaPj2Horizontal
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -87804,11 +87801,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5909382743537497921, guid: a4b6c996da826b142855763e2377f347, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -144.04
+      value: -273.7
       objectReference: {fileID: 0}
     - target: {fileID: 5909382743537497921, guid: a4b6c996da826b142855763e2377f347, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.08
+      value: -33.2
       objectReference: {fileID: 0}
     - target: {fileID: 5909382743537497921, guid: a4b6c996da826b142855763e2377f347, type: 3}
       propertyPath: m_LocalPosition.z

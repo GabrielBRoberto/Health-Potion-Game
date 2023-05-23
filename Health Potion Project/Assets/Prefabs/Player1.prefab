@@ -419,7 +419,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1611609664, guid: 0f61ec8a8b61fd74d95a3a07edc89cf6, type: 3}
+  m_Sprite: {fileID: 1839332415, guid: 8a632080f4569034b9305e665a823ddd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -427,7 +427,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &5909382743537497934
@@ -447,7 +447,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -463,7 +463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024d2628dfb7fe74ba383059537479c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerActionMap: {fileID: 0}
   speed: 5
   jumpForce: 12.5
   dashSpeed: 10
@@ -477,6 +476,7 @@ MonoBehaviour:
   canInteract: 0
   interacting: 0
   type: 0
+  respawnPosition: {fileID: 0}
   InteractionIcon: {fileID: 5581297785201586229}
 --- !u!70 &415455568
 CapsuleCollider2D:

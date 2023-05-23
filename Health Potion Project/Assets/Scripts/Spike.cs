@@ -7,9 +7,9 @@ public class Spike : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.GetComponent<Player>() != null)
         {
-            SceneManager.LoadScene("Level");
+            collision.transform.parent = collision.GetComponent<Player>().respawnPosition;
         }
     }
 }

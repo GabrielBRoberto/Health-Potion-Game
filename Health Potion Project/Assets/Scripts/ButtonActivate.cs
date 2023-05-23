@@ -12,6 +12,11 @@ public class ButtonActivate : Activate
     [SerializeField]
     private Transform openVector;
 
+    [SerializeField]
+    private Sprite defaultSprite;
+    [SerializeField]
+    private Sprite activatedSprite;
+
     public override void Active()
     {
         gameObjectToMove.transform.position = Vector3.Lerp(openVector.position, closedVector.position, Time.deltaTime);

@@ -35,6 +35,9 @@ public class Player : MonoBehaviour
 
     public PlayerType type;
 
+    [HideInInspector]
+    public Transform respawnPosition;
+
     [SerializeField]
     private GameObject InteractionIcon;
 
@@ -250,6 +253,11 @@ public class Player : MonoBehaviour
 
             platform = collision.GetComponent<ActivateMovePlatform>();
         }
+
+        if (collision.tag == "Checkpoint")
+        {
+            respawnPosition = collision.transform;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -297,9 +305,28 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnWaterHit()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        transform.position = startPosition;
+        if (collision.collider.tag == "GroundPlatform")
+        {
+            isGrounded = true;
+            canJump = true;
+
+            //speed *= 4;
+
+            gameObject.transform.SetParent(collision.transform);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "GroundPlatform")
+        {
+            isGrounded = false;
+
+            //speed /= 4;
+
+            gameObject.transform.SetParent(null);
+        }
     }
 
     private void Walk(Vector2 dir, PlayerType playerType)

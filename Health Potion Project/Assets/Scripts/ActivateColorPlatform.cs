@@ -12,7 +12,7 @@ public class ActivateColorPlatform : Activate
     {
         for (int i = 0; i < platforms.Length; i++)
         {
-            platforms[i].GetComponent<PlatformColor>().activate = !platforms[i].GetComponent<PlatformColor>().activate;
+            platforms[i].GetComponent<PlatformColor>().changeLayer = !platforms[i].GetComponent<PlatformColor>().changeLayer;
         }
 
         GetComponent<Animator>().SetTrigger("trig");
@@ -22,10 +22,11 @@ public class ActivateColorPlatform : Activate
     {
         for (int i = 0; i < platforms.Length; i++)
         {
-            platforms[i].GetComponent<SpriteRenderer>().sprite = platforms[i].GetComponent<PlatformColor>().activate ? 
+            platforms[i].GetComponent<SpriteRenderer>().sprite = platforms[i].GetComponent<PlatformColor>().changeLayer ? 
                 platforms[i].GetComponent<PlatformColor>().platformActivated : platforms[i].GetComponent<PlatformColor>().platformDesactivated;
 
-            platforms[i].layer = platforms[i].GetComponent<PlatformColor>().activate ? platforms[i].GetComponent<PlatformColor>().activatedLayer : 11;
+            platforms[i].layer = platforms[i].GetComponent<PlatformColor>().changeLayer ? LayerMask.NameToLayer(platforms[i].GetComponent<PlatformColor>().DefaultLayer)
+                                                                                        : LayerMask.NameToLayer(platforms[i].GetComponent<PlatformColor>().OtherLayer);
         }
     }
 }

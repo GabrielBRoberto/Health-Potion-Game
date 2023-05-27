@@ -12,7 +12,7 @@ public class WaterTrigger : MonoBehaviour
 
             if (player.type == PlayerType.Player1)
             {
-                player.gameObject.transform.parent = player.respawnPosition;
+                player.gameObject.transform.position = player.respawnPosition.position;
             }
         }
     }

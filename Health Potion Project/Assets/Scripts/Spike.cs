@@ -9,7 +9,7 @@ public class Spike : MonoBehaviour
     {
         if (collision.GetComponent<Player>() != null)
         {
-            collision.transform.parent = collision.GetComponent<Player>().respawnPosition;
+            collision.transform.position = collision.GetComponent<Player>().respawnPosition.position;
         }
     }
 }

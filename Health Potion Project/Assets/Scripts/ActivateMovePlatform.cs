@@ -9,6 +9,8 @@ public class ActivateMovePlatform : Activate
 
     public override void Active()
     {
+        GetComponent<AudioSource>().Play();
+
         if (platform.transform.position == A.transform.position)
         {
             StartCoroutine(Vector3LerpCoroutine(platform, B.transform.position, 5f));

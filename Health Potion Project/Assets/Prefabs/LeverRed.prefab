@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4036224904656223364}
   - component: {fileID: 4036224904656223367}
-  - component: {fileID: 4036224904656223366}
   - component: {fileID: 4036224904656223610}
   - component: {fileID: 4036224904656223365}
+  - component: {fileID: 6271679141787396672}
   m_Layer: 0
   m_Name: LeverRed
   m_TagString: PlatformButton
@@ -87,22 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4036224904656223366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4036224904656223361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 963dfdd5ad234704298614d2fe29a525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platforms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!61 &4036224904656223610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149,3 +133,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &6271679141787396672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4036224904656223361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c854f7a6ddc11dc47b1141849fa1a388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platform: {fileID: 0}
+  A: {fileID: 0}
+  B: {fileID: 0}

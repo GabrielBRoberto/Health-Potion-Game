@@ -53,57 +53,57 @@
     <UnityVersion>2021.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\Blackboard\BlackboardProvider.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\GUILayoutHelper.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\ResourcesUtility.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\PropertyNode.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\AssetCallbacks\CreateDlogGraph.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\NpcNode.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\SerializedProperty.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\Properties\TriggerProperty.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Versioning\Conversion\ConvertMethodAttribute.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\DlogGraphObject.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\Properties\AbstractProperty.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Versioning\DlogVersion.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Importers\DlogGraphImporterEditor.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\DlogGraphView.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\Port\DlogPort.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\DlogGraphData.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\Blackboard\BlackboardPropertyView.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\UIElementsFactory.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Versioning\SemVer.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\DlogExtensions.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\Blackboard\BlackboardPropertyView.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\AbstractNode.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\NodeColors.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\Port\PortType.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\NodeDrawState.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\Properties\ActorProperty.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\DlogGraphObject.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\UIElementsFactory.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\Properties\CheckProperty.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\SearchWindow\SearchWindowAdapter.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\CheckCombinerNode.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\VisualElementExtensions.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\SearchWindow\SearchWindowProvider.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\Properties\CheckProperty.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\DlogExtensions.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Versioning\Conversion\VersionConverter.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\ResourcesUtility.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\GraphViewExtensions.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\SerializedNode.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\AbstractNode.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\DlogEditorWindow.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\GUILayoutHelper.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\PropertyNode.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Importers\DlogGraphAssetPostProcessor.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Ref.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\EdgeConnectorListener.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Inspector\DlogObjectEditor.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\NodeColors.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\DlogGraphView.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\DlogWindowEvents.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\SerializedEdge.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Attributes\TitleAttribute.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\NpcNode.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\Port\PortType.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\EditorView.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\Port\PortHelper.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\NodeDrawState.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Importers\DlogGraphImporter.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\DlogUtility.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\AssetCallbacks\CreateDlogGraph.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\Properties\TriggerProperty.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\SelfNode.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\SerializedProperty.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\Port\DlogPort.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\SerializedNode.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\CopyPasteData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Importers\DlogGraphAssetPostProcessor.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Versioning\DialogueGraphVersion.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\Properties\AbstractProperty.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\VisualElementExtensions.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\DlogUtility.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Importers\DlogGraphImporterEditor.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\EdgeConnectorListener.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Extensions\GraphViewExtensions.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Attributes\TitleAttribute.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Ref.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\DlogGraphData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\Port\PortHelper.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Nodes\SelfNode.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\DlogEditorWindow.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Versioning\Conversion\VersionConverter.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Util\Versioning\DlogVersion.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Inspector\DlogObjectEditor.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\Blackboard\BlackboardProvider.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Data\SerializedEdge.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Editor\Graph\Views\SearchWindow\SearchWindowProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Dialogue\Editor\DialogueGraph.Editor.asmdef" />
@@ -748,11 +748,11 @@
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>

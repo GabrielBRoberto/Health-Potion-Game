@@ -13,6 +13,8 @@ public class WaterTrigger : MonoBehaviour
             if (player.type == PlayerType.Player1)
             {
                 player.gameObject.transform.position = player.respawnPosition.position;
+
+                GetComponent<AudioSource>().Play();
             }
         }
     }

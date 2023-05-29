@@ -920,6 +920,30 @@
       <Project>{11818DF9-372D-3FB7-E1AA-F0E19A33BBC7}</Project>
       <Name>AllIn1VfxDemoScriptAssemblies</Name>
     </ProjectReference>
+    <ProjectReference Include="SerializableDictionary.Editor.csproj">
+      <Project>{4DA81B8B-6826-E9E0-EB98-7DD79AF17879}</Project>
+      <Name>SerializableDictionary.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="DialogueGraph.Runtime.csproj">
+      <Project>{2055F2FA-240E-78ED-BA0F-74B925C3E950}</Project>
+      <Name>DialogueGraph.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="SerializableDictionary.Runtime.csproj">
+      <Project>{81C31F25-144C-2DAE-F9B2-A211535069B6}</Project>
+      <Name>SerializableDictionary.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="DialogueGraph.Editor.csproj">
+      <Project>{E759B24C-2922-5416-9B47-5770704DFAA7}</Project>
+      <Name>DialogueGraph.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Siccity.SerializableCallback.csproj">
+      <Project>{225C1B08-114E-2230-E207-7C1AAB709498}</Project>
+      <Name>Siccity.SerializableCallback</Name>
+    </ProjectReference>
+    <ProjectReference Include="Siccity.SerializableCallback.Editor.csproj">
+      <Project>{89F3CD0A-5408-E49E-50A4-C11F0A4E698A}</Project>
+      <Name>Siccity.SerializableCallback.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

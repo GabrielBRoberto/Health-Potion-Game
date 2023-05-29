@@ -53,10 +53,21 @@
     <UnityVersion>2021.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Properties\Property.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Edge.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Node.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Runtime\DialogueGraph.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\ConversationLine.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\DlogObject.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Properties\PropertyType.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\ActorData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\DlogObjectData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\GenericDataTypes.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\ActorScriptableObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Dialogue\Runtime\DialogueGraph.Runtime.asmdef" />
@@ -727,6 +738,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Siccity.SerializableCallback.csproj">
+      <Project>{225C1B08-114E-2230-E207-7C1AAB709498}</Project>
+      <Name>Siccity.SerializableCallback</Name>
+    </ProjectReference>
+    <ProjectReference Include="Siccity.SerializableCallback.Editor.csproj">
+      <Project>{89F3CD0A-5408-E49E-50A4-C11F0A4E698A}</Project>
+      <Name>Siccity.SerializableCallback.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SerializableDictionary.Editor.csproj">
+      <Project>{4DA81B8B-6826-E9E0-EB98-7DD79AF17879}</Project>
+      <Name>SerializableDictionary.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SerializableDictionary.Runtime.csproj">
+      <Project>{81C31F25-144C-2DAE-F9B2-A211535069B6}</Project>
+      <Name>SerializableDictionary.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

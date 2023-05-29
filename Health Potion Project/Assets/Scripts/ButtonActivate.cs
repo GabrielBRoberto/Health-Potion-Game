@@ -17,6 +17,8 @@ public class ButtonActivate : Activate
         //gameObjectToMove.transform.position = Vector3.Lerp(openVector.position, closedVector.position, 50f * Time.deltaTime);
 
         StartCoroutine(Vector3LerpCoroutine(gameObjectToMove, openVector.position, 10f));
+
+        GetComponent<AudioSource>().Play();
     }
     public void Desactivate()
     {

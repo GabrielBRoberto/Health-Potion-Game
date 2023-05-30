@@ -9,7 +9,12 @@ public class Spike : MonoBehaviour
     {
         if (collision.GetComponent<Player>() != null)
         {
-            collision.transform.position = collision.GetComponent<Player>().respawnPosition.position;
+            GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+            for (int i = 0; i < allPlayers.Length; i++)
+            {
+                allPlayers[i].transform.position = allPlayers[i].GetComponent<Player>().respawnPosition.position;
+            }
         }
     }
 }

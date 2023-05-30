@@ -37,6 +37,7 @@ public class MenuController : MonoBehaviour
     [Header("Levels to Load")]
     public string _primeiroLevel;
     public string _segundoLevel;
+    public string _terceiroLevel;
 
     [Header("Resolutions Dropdown")]
     public TMP_Dropdown resolutionDropdown;
@@ -81,6 +82,10 @@ public class MenuController : MonoBehaviour
     public void SegundoLevel()
     {
         SceneManager.LoadScene(_segundoLevel);
+    }
+    public void TerceiroLevel()
+    {
+        SceneManager.LoadScene(_terceiroLevel);
     }
 
     public void ExitGame()

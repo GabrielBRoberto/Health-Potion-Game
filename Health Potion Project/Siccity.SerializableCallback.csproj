@@ -56,16 +56,16 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableEvent.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableEventBase.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\Test.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableCallback.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\SerializableEventBase.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableCallbackBase.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\SerializableEvent.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\SerializableCallbackBase.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\Attributes\TargetConstraintAttribute.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableCallbackBase.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableEventBase.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\SerializableEventBase.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\SerializableCallbackBase.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableCallback.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\SerializableEvent.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\SerializableCallback.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\Test.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\InvokableEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Dialogue\Dependencies\SerializableCallback\Runtime\Siccity.SerializableCallback.asmdef" />

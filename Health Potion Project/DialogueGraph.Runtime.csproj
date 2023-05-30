@@ -56,18 +56,18 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Properties\Property.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Edge.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Node.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Runtime\DialogueGraph.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\ConversationLine.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\DlogObject.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\PlayerData.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Properties\PropertyType.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\ActorData.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\Runtime\DlogObjectData.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Runtime\GenericDataTypes.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Properties\Property.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Node.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\ConversationLine.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\DlogObjectData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\ActorData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Edge.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\Properties\PropertyType.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Runtime\ActorScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Runtime\Data\DlogObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Dialogue\Runtime\DialogueGraph.Runtime.asmdef" />

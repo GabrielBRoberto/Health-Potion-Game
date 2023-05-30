@@ -56,10 +56,13 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Dialogue\NPCDialogueTemplate.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\LineController.cs" />
     <Compile Include="Assets\Scripts\AlwaysMovePlatform.cs" />
     <Compile Include="Assets\Scripts\GroundDetection.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Spike.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\LineEntry.cs" />
     <Compile Include="Assets\Scripts\MultipleTargetsCamera.cs" />
     <Compile Include="Assets\Scripts\GetItemActivate.cs" />
     <Compile Include="Assets\Scripts\BallonTrigger.cs" />
@@ -74,16 +77,13 @@
     <Compile Include="Assets\Scripts\EndVideo.cs" />
     <Compile Include="Assets\Scripts\Activate.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\NPCDialogue.cs" />
+    <Compile Include="Assets\Scripts\CameraOffset.cs" />
     <Compile Include="Assets\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\ButtonActivate.cs" />
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Main Menu\Scripts\MenuController.cs" />
-    <Compile Include="Assets\Scripts\CameraOffset.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\LineEntry.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\LineController.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\NPCDialogueTemplate.cs" />
-    <Compile Include="Assets\Scripts\Dialogue\NPCDialogue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -928,9 +928,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SerializableDictionary.Editor.csproj">
+      <Project>{4DA81B8B-6826-E9E0-EB98-7DD79AF17879}</Project>
+      <Name>SerializableDictionary.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="AllIn1VfxAssmebly.csproj">
       <Project>{E7D06C34-FA30-4C6D-8519-B767B9308E72}</Project>
       <Name>AllIn1VfxAssmebly</Name>
+    </ProjectReference>
+    <ProjectReference Include="DialogueGraph.Runtime.csproj">
+      <Project>{2055F2FA-240E-78ED-BA0F-74B925C3E950}</Project>
+      <Name>DialogueGraph.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="AllIn1VfxTexDemoAssembly.csproj">
       <Project>{49185D05-9FF9-DAA2-D64F-EDF16289FB66}</Project>
@@ -939,14 +947,6 @@
     <ProjectReference Include="AllIn1VfxDemoScriptAssemblies.csproj">
       <Project>{11818DF9-372D-3FB7-E1AA-F0E19A33BBC7}</Project>
       <Name>AllIn1VfxDemoScriptAssemblies</Name>
-    </ProjectReference>
-    <ProjectReference Include="SerializableDictionary.Editor.csproj">
-      <Project>{4DA81B8B-6826-E9E0-EB98-7DD79AF17879}</Project>
-      <Name>SerializableDictionary.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="DialogueGraph.Runtime.csproj">
-      <Project>{2055F2FA-240E-78ED-BA0F-74B925C3E950}</Project>
-      <Name>DialogueGraph.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="SerializableDictionary.Runtime.csproj">
       <Project>{81C31F25-144C-2DAE-F9B2-A211535069B6}</Project>

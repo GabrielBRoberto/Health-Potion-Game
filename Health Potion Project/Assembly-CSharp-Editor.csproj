@@ -908,9 +908,17 @@
       <Project>{1F5DDF9B-35A8-5063-DA46-CB101944CEE7}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="SerializableDictionary.Editor.csproj">
+      <Project>{4DA81B8B-6826-E9E0-EB98-7DD79AF17879}</Project>
+      <Name>SerializableDictionary.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="AllIn1VfxAssmebly.csproj">
       <Project>{E7D06C34-FA30-4C6D-8519-B767B9308E72}</Project>
       <Name>AllIn1VfxAssmebly</Name>
+    </ProjectReference>
+    <ProjectReference Include="DialogueGraph.Runtime.csproj">
+      <Project>{2055F2FA-240E-78ED-BA0F-74B925C3E950}</Project>
+      <Name>DialogueGraph.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="AllIn1VfxTexDemoAssembly.csproj">
       <Project>{49185D05-9FF9-DAA2-D64F-EDF16289FB66}</Project>
@@ -919,14 +927,6 @@
     <ProjectReference Include="AllIn1VfxDemoScriptAssemblies.csproj">
       <Project>{11818DF9-372D-3FB7-E1AA-F0E19A33BBC7}</Project>
       <Name>AllIn1VfxDemoScriptAssemblies</Name>
-    </ProjectReference>
-    <ProjectReference Include="SerializableDictionary.Editor.csproj">
-      <Project>{4DA81B8B-6826-E9E0-EB98-7DD79AF17879}</Project>
-      <Name>SerializableDictionary.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="DialogueGraph.Runtime.csproj">
-      <Project>{2055F2FA-240E-78ED-BA0F-74B925C3E950}</Project>
-      <Name>DialogueGraph.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="SerializableDictionary.Runtime.csproj">
       <Project>{81C31F25-144C-2DAE-F9B2-A211535069B6}</Project>

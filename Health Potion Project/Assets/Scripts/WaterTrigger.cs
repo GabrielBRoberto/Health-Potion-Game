@@ -8,13 +8,11 @@ public class WaterTrigger : MonoBehaviour
     {
         if (collision.GetComponent<Player>() != null)
         {
-            Player player= collision.GetComponent<Player>();
+            GameObject[] allPlayers = GameObject.FindGameObjectsWithTag("Player");
 
-            if (player.type == PlayerType.Player1)
+            for (int i = 0; i < allPlayers.Length; i++)
             {
-                player.gameObject.transform.position = player.respawnPosition.position;
-
-                GetComponent<AudioSource>().Play();
+                allPlayers[i].transform.position = allPlayers[i].GetComponent<Player>().respawnPosition.position;
             }
         }
     }

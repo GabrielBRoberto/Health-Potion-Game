@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
 
     private bool onTrigger = false;
     private ActivateMovePlatform platform;
+    private ActivateColorPlatform platformColor;
 
     private void Start()
     {
@@ -102,7 +103,14 @@ public class Player : MonoBehaviour
         {
             if (inputActions.Player1.Interact.triggered && onTrigger)
             {
-                platform.Active();
+                if (platform != null)
+                {
+                    platform.Active();
+                }
+                if (platformColor != null)
+                {
+                    platformColor.Active();
+                }
             }
 
             if (inputActions.Player1.Interact.triggered && canInteract)
@@ -136,7 +144,14 @@ public class Player : MonoBehaviour
         {
             if (inputActions.Player2.Interact.triggered && onTrigger)
             {
-                platform.Active();
+                if (platform != null)
+                {
+                    platform.Active();
+                }
+                if (platformColor != null)
+                {
+                    platformColor.Active();
+                }
             }
 
             if (inputActions.Player2.Interact.triggered && canInteract)
@@ -258,6 +273,12 @@ public class Player : MonoBehaviour
         {
             respawnPosition = collision.transform;
         }
+        if (collision.tag == "PlatformColor")
+        {
+            onTrigger = true;
+
+            platformColor = collision.GetComponent<ActivateColorPlatform>();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -272,6 +293,12 @@ public class Player : MonoBehaviour
 
             platform = null;
         }
+        if (collision.tag == "PlatformColor")
+        {
+            onTrigger = false;
+
+            platformColor = null;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -283,24 +310,6 @@ public class Player : MonoBehaviour
             if (inputActions.Player1.Interact.triggered)
             {
                 collision.GetComponent<ActivateMovePlatform>().Active();
-            }
-        }
-
-        if (collision.tag == "PlatformColor")
-        {
-            if (type == PlayerType.Player1)
-            {
-                if (inputActions.Player1.Interact.triggered)
-                {
-                    collision.GetComponent<ActivateColorPlatform>().Active();
-                }
-            }
-            else
-            {
-                if (inputActions.Player2.Interact.triggered)
-                {
-                    collision.GetComponent<ActivateColorPlatform>().Active();
-                }
             }
         }
     }

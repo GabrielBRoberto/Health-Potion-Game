@@ -16,6 +16,7 @@ public class ActivateColorPlatform : Activate
         }
 
         GetComponent<Animator>().SetTrigger("trig");
+        GetComponent<AudioSource>().Play();
     }
 
     private void Update()

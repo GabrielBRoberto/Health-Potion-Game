@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bb15ffe025335544baeb94538a8f1c03
+guid: fda6f3f266abbb24d89e0e2eed154baf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arvore1_0
+      name: 2MonstrinhoSheet_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 176
-        width: 101
-        height: 123
+        x: 0
+        y: 48
+        width: 32
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe8c4eb32b452d446bd425cd6d14e2ed
-      internalID: 160982201
+      spriteID: 586659cf7a1ac3843b1cd6ccf71be120
+      internalID: 78735750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arvore1_1
+      name: 2MonstrinhoSheet_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 170
-        width: 98
-        height: 147
+        x: 0
+        y: 32
+        width: 32
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99e39b4ebb593964ab71040029d62843
-      internalID: -1864391874
+      spriteID: 7394f8f8014fef14aa5756449e915c57
+      internalID: -1367998632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arvore1_2
+      name: 2MonstrinhoSheet_2
       rect:
         serializedVersion: 2
-        x: 7
-        y: 5
-        width: 141
-        height: 145
+        x: 0
+        y: 16
+        width: 32
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 533f92c98d8c1844ca4f1f78c8edb589
-      internalID: -1026071895
+      spriteID: f8cafc41112dbfb478fcfe85b7cf5f1d
+      internalID: -550734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MonstrinhoSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf638a463c2a3034c9fc29a65115a925
+      internalID: 1819826437
       vertices: []
       indices: 
       edges: []
@@ -178,9 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Arvore1_0: 160982201
-      Arvore1_2: -1026071895
-      Arvore1_1: -1864391874
+      2MonstrinhoSheet_0: 78735750
+      2MonstrinhoSheet_2: -550734
+      2MonstrinhoSheet_1: -1367998632
+      2MonstrinhoSheet_3: 1819826437
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

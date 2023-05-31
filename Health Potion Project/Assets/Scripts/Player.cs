@@ -187,7 +187,7 @@ public class Player : MonoBehaviour
         }
         #endregion
     }
- 
+    /*
     private void FixedUpdate()
     {
         if (interacting)
@@ -204,9 +204,9 @@ public class Player : MonoBehaviour
 
             if (type == PlayerType.Player2)
             {
-                onWall = true;
+                //onWall = true;
 
-                rb.velocity = Vector2.zero;
+                //rb.velocity = Vector2.zero;
             }
         }
         else
@@ -214,7 +214,7 @@ public class Player : MonoBehaviour
             rb.gravityScale = 3f;
         }
     }
-
+    */
     private void LateUpdate()
     {
         float speedValue = rb.velocity.x;
@@ -360,20 +360,25 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpForce;
+
+        GetComponent<AudioSource>().Play();
     }
 
     private void Dash(float x, float y)
     {
-        hasDashed = true;
+        if (!hasDashed)
+        {
+            hasDashed = true;
 
-        rb.velocity = Vector2.zero;
+            rb.velocity = Vector2.zero;
 
-        Vector2 dir = new Vector2(x, y);
+            Vector2 dir = new Vector2(x, y);
+                
+            dashSpeed = (dir.normalized.x != 0) ? 25 : 10;
 
-        dashSpeed = (dir.normalized.x != 0) ? 25 : 10;
-
-        rb.velocity += dir.normalized * dashSpeed;
-        StartCoroutine(DashWait());
+            rb.velocity += dir.normalized * dashSpeed;
+            StartCoroutine(DashWait());
+        }
     }
 
     IEnumerator DashWait()
@@ -382,11 +387,12 @@ public class Player : MonoBehaviour
 
         isDashing = true;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
 
         rb.gravityScale = 3f;
 
         isDashing = false;
+        hasDashed = false;
     }
 }
 

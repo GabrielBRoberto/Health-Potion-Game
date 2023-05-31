@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7949226122822345204}
   - component: {fileID: 7949226122822345207}
   - component: {fileID: 7949226122822345206}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WATER_TILED_60X20_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

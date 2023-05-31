@@ -353,6 +353,7 @@
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/Spike.cs"
 "Assets/Scripts/WaterTrigger.cs"
+"Assets/Scripts/WaterTriggerSound.cs"
 -langversion:9.0
 
 /deterministic

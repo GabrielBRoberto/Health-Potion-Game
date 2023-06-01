@@ -1628,10 +1628,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8942306622291983831, guid: 121ebe477050bf0428be169174524262, type: 3}
       propertyPath: speed
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 121ebe477050bf0428be169174524262, type: 3}
+--- !u!1 &240964547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8942306622291983828, guid: 121ebe477050bf0428be169174524262, type: 3}
+  m_PrefabInstance: {fileID: 240964546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &240964548
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240964547}
+  m_Enabled: 1
 --- !u!1 &253645788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,6 +1814,26 @@ PrefabInstance:
     - target: {fileID: 7949226122822345194, guid: 097b5d175587a57468997046cc42e711, type: 3}
       propertyPath: m_Name
       value: WATER_TILED_60X20_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: MaxDistance
+      value: 6.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86a975bee2a326f4a954043e6cbb449a, type: 3}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097b5d175587a57468997046cc42e711, type: 3}
@@ -3903,6 +3936,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4b6c996da826b142855763e2377f347, type: 3}
+--- !u!1 &782479142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5909382743537497923, guid: a4b6c996da826b142855763e2377f347, type: 3}
+  m_PrefabInstance: {fileID: 782479141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &782479143
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782479142}
+  m_Enabled: 1
 --- !u!1 &791485125
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,7 +4359,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63ca3e37c8b619649802b399a7e1f2d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2b26f665b0a7e1f44802cabf20f81d1a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4409,7 +4455,6 @@ GameObject:
   m_Component:
   - component: {fileID: 820503829}
   - component: {fileID: 820503828}
-  - component: {fileID: 820503827}
   - component: {fileID: 820503830}
   - component: {fileID: 820503831}
   m_Layer: 0
@@ -4419,14 +4464,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &820503827
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820503826}
-  m_Enabled: 1
 --- !u!20 &820503828
 Camera:
   m_ObjectHideFlags: 0
@@ -35932,6 +35969,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 96064191}
     m_Modifications:
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: MaxDistance
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86a975bee2a326f4a954043e6cbb449a, type: 3}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 48246776491878313, guid: 4461ffb02feff674a83e439440b80345, type: 3}
       propertyPath: m_Name
       value: WATER_TILED_20X20_0 (8)
@@ -36397,6 +36454,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: WATER_TILED_60X20_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: MaxDistance
+      value: 12.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86a975bee2a326f4a954043e6cbb449a, type: 3}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097b5d175587a57468997046cc42e711, type: 3}
 --- !u!1001 &1160520053
@@ -36538,7 +36615,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63ca3e37c8b619649802b399a7e1f2d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2b26f665b0a7e1f44802cabf20f81d1a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -50713,7 +50790,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63ca3e37c8b619649802b399a7e1f2d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2b26f665b0a7e1f44802cabf20f81d1a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -54233,7 +54310,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63ca3e37c8b619649802b399a7e1f2d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2b26f665b0a7e1f44802cabf20f81d1a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -54525,7 +54602,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63ca3e37c8b619649802b399a7e1f2d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2b26f665b0a7e1f44802cabf20f81d1a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -54819,6 +54896,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 96064191}
     m_Modifications:
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: MaxDistance
+      value: 8.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86a975bee2a326f4a954043e6cbb449a, type: 3}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 48246776491878313, guid: 4461ffb02feff674a83e439440b80345, type: 3}
       propertyPath: m_Name
       value: WATER_TILED_20X20_0 (2)
@@ -55593,6 +55690,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 96064191}
     m_Modifications:
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: MaxDistance
+      value: 10.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86a975bee2a326f4a954043e6cbb449a, type: 3}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48246776491878312, guid: 4461ffb02feff674a83e439440b80345, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 48246776491878313, guid: 4461ffb02feff674a83e439440b80345, type: 3}
       propertyPath: m_Name
       value: WATER_TILED_20X20_0
@@ -55722,6 +55839,22 @@ PrefabInstance:
     - target: {fileID: 7949226122822345194, guid: 097b5d175587a57468997046cc42e711, type: 3}
       propertyPath: m_Name
       value: WATER_TILED_60X20_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86a975bee2a326f4a954043e6cbb449a, type: 3}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949226122822345206, guid: 097b5d175587a57468997046cc42e711, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097b5d175587a57468997046cc42e711, type: 3}

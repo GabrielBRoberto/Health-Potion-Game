@@ -1139,7 +1139,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1609715121}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: JogarLevel
+        m_MethodName: PrimeiroLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8332,7 +8332,7 @@ MonoBehaviour:
   qualityDropdown: {fileID: 0}
   fullScreenToggle: {fileID: 0}
   confirmationPrompt: {fileID: 611798080}
-  _primeiroLevel: Level
+  _primeiroLevel: Level_Cutscene
   _segundoLevel: Level_2
   _terceiroLevel: Level_3
   resolutionDropdown: {fileID: 768524227}

@@ -74,6 +74,11 @@ public class MenuController : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
+    public void PrimeiroLevel()
+    {
+        SceneManager.LoadScene("Level");
+    }
+
     public void JogarLevel ()
     {
         SceneManager.LoadScene(_primeiroLevel);

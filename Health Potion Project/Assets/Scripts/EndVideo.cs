@@ -8,6 +8,10 @@ public class EndVideo : MonoBehaviour
 {
     private VideoPlayer player;
 
+    [Header("Levels to Load")]
+    public string _proximaCena;
+
+
     private void Start()
     {
         player = GetComponent<VideoPlayer>();
@@ -17,6 +21,7 @@ public class EndVideo : MonoBehaviour
     
     private void ChangeScene(VideoPlayer soruce)
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(_proximaCena);
     }
+
 }

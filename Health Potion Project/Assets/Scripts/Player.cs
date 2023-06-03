@@ -49,7 +49,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         inputActions = new PlayerControls();
-        respawnPosition = transform;
 
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

@@ -107,7 +107,7 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Menu");
     }
     public void ExitClick()
     {

@@ -9,9 +9,6 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     public PlayerControls inputActions;
 
-    [SerializeField]
-    private InputActionAsset playerActionMap;
-
     [Header("Stats")]
     [SerializeField]
     private float speed = 50f;
@@ -38,6 +35,9 @@ public class Player : MonoBehaviour
 
     public PlayerType type;
 
+    [HideInInspector]
+    public Transform respawnPosition;
+
     [SerializeField]
     private GameObject InteractionIcon;
 
@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
 
     private bool onTrigger = false;
     private ActivateMovePlatform platform;
+    private ActivateColorPlatform platformColor;
 
     private void Start()
     {
@@ -102,7 +103,14 @@ public class Player : MonoBehaviour
         {
             if (inputActions.Player1.Interact.triggered && onTrigger)
             {
-                platform.Active();
+                if (platform != null)
+                {
+                    platform.Active();
+                }
+                if (platformColor != null)
+                {
+                    platformColor.Active();
+                }
             }
 
             if (inputActions.Player1.Interact.triggered && canInteract)
@@ -136,7 +144,14 @@ public class Player : MonoBehaviour
         {
             if (inputActions.Player2.Interact.triggered && onTrigger)
             {
-                platform.Active();
+                if (platform != null)
+                {
+                    platform.Active();
+                }
+                if (platformColor != null)
+                {
+                    platformColor.Active();
+                }
             }
 
             if (inputActions.Player2.Interact.triggered && canInteract)
@@ -172,7 +187,7 @@ public class Player : MonoBehaviour
         }
         #endregion
     }
- 
+    /*
     private void FixedUpdate()
     {
         if (interacting)
@@ -189,9 +204,9 @@ public class Player : MonoBehaviour
 
             if (type == PlayerType.Player2)
             {
-                onWall = true;
+                //onWall = true;
 
-                rb.velocity = Vector2.zero;
+                //rb.velocity = Vector2.zero;
             }
         }
         else
@@ -199,7 +214,7 @@ public class Player : MonoBehaviour
             rb.gravityScale = 3f;
         }
     }
-
+    */
     private void LateUpdate()
     {
         float speedValue = rb.velocity.x;
@@ -253,6 +268,17 @@ public class Player : MonoBehaviour
 
             platform = collision.GetComponent<ActivateMovePlatform>();
         }
+
+        if (collision.tag == "Checkpoint")
+        {
+            respawnPosition = collision.transform;
+        }
+        if (collision.tag == "PlatformColor")
+        {
+            onTrigger = true;
+
+            platformColor = collision.GetComponent<ActivateColorPlatform>();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -266,6 +292,12 @@ public class Player : MonoBehaviour
             onTrigger = false;
 
             platform = null;
+        }
+        if (collision.tag == "PlatformColor")
+        {
+            onTrigger = false;
+
+            platformColor = null;
         }
     }
 
@@ -282,9 +314,28 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnWaterHit()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        transform.position = startPosition;
+        if (collision.collider.tag == "GroundPlatform")
+        {
+            isGrounded = true;
+            canJump = true;
+
+            //speed *= 4;
+
+            gameObject.transform.SetParent(collision.transform);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "GroundPlatform")
+        {
+            isGrounded = false;
+
+            //speed /= 4;
+
+            gameObject.transform.SetParent(null);
+        }
     }
 
     private void Walk(Vector2 dir, PlayerType playerType)
@@ -309,20 +360,25 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpForce;
+
+        GetComponent<AudioSource>().Play();
     }
 
     private void Dash(float x, float y)
     {
-        hasDashed = true;
+        if (!hasDashed)
+        {
+            hasDashed = true;
 
-        rb.velocity = Vector2.zero;
+            rb.velocity = Vector2.zero;
 
-        Vector2 dir = new Vector2(x, y);
+            Vector2 dir = new Vector2(x, y);
+                
+            dashSpeed = (dir.normalized.x != 0) ? 25 : 10;
 
-        dashSpeed = (dir.normalized.x != 0) ? 25 : 10;
-
-        rb.velocity += dir.normalized * dashSpeed;
-        StartCoroutine(DashWait());
+            rb.velocity += dir.normalized * dashSpeed;
+            StartCoroutine(DashWait());
+        }
     }
 
     IEnumerator DashWait()
@@ -331,11 +387,12 @@ public class Player : MonoBehaviour
 
         isDashing = true;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
 
         rb.gravityScale = 3f;
 
         isDashing = false;
+        hasDashed = false;
     }
 }
 

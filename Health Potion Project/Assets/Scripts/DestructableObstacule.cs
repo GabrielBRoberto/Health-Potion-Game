@@ -6,6 +6,8 @@ public class DestructableObstacule : Activate
 {
     public override void Active()
     {
+        GetComponent<AudioSource>().Play();
+
         Destroy(gameObject);
     }
 }

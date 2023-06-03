@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public string _currentScene;
+
     [SerializeField]
     private MenuType menuType;
     [SerializeField]
@@ -19,6 +21,11 @@ public class Menu : MonoBehaviour
 
     public bool onMenu = false;
 
+    private void Awake()
+    {
+        Time.timeScale = 1;
+    }
+
     private void Update()
     {
         switch (menuType)
@@ -30,6 +37,11 @@ public class Menu : MonoBehaviour
                 PauseMenuLogic();
                 break;
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(_currentScene);
     }
 
     private void MainMenuLogic()

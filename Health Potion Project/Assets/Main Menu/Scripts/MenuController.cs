@@ -66,6 +66,7 @@ public class MenuController : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        SetVolume(defaultVolume);
     }
 
     public void SetResolution(int resolutionIndex)
@@ -172,7 +173,7 @@ public class MenuController : MonoBehaviour
     public IEnumerator ConfirmationBox()
     {
         confirmationPrompt.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         confirmationPrompt.SetActive(false);
     }
     

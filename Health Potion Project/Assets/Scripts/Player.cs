@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
 
         startPosition = transform.position;
+        respawnPosition = transform;
 
         #region Input Enable
         if (type == PlayerType.Player1)

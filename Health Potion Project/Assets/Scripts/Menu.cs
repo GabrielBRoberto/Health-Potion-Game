@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public string _currentLevel;
+
     [SerializeField]
     private MenuType menuType;
     [SerializeField]
@@ -18,6 +21,11 @@ public class Menu : MonoBehaviour
     private GameObject creditsGameObject;
 
     public bool onMenu = false;
+
+    private void Awake()
+    {
+        Time.timeScale = 1;
+    }
 
     private void Update()
     {
@@ -68,6 +76,11 @@ public class Menu : MonoBehaviour
         {
             DesactivateAllGameObject();
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(_currentLevel);
     }
 
     #region Geral Logic

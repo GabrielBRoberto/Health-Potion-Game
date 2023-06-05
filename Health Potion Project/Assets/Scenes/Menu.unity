@@ -1176,7 +1176,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -311.09998, y: 0}
+  m_AnchoredPosition: {x: -465, y: 17}
   m_SizeDelta: {x: -1628.1838, y: -1012.99963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &340891373
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fase 1
+  m_text: Cidade
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1837a6803355a0a489dafd63a9be9838, type: 2}
   m_sharedMaterial: {fileID: -1674059857133749858, guid: 1837a6803355a0a489dafd63a9be9838, type: 2}
@@ -3608,8 +3608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 311.09998, y: 0}
-  m_SizeDelta: {x: -1628.1838, y: -1012.99963}
+  m_AnchoredPosition: {x: 0, y: 17}
+  m_SizeDelta: {x: -1598.8499, y: -1012.9996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662718004
 MonoBehaviour:
@@ -3699,7 +3699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fase 2
+  m_text: Caverna
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1837a6803355a0a489dafd63a9be9838, type: 2}
   m_sharedMaterial: {fileID: -1674059857133749858, guid: 1837a6803355a0a489dafd63a9be9838, type: 2}
@@ -5503,7 +5503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Health Potion Games V.2.2
+  m_text: 'Health Potion Games V.2.3
 
 '
   m_isRightToLeft: 0
@@ -9259,7 +9259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000015259, y: -127}
+  m_AnchoredPosition: {x: -0.000015259, y: -124}
   m_SizeDelta: {x: 914.024, y: 98.448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1755548788
@@ -10944,8 +10944,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 44, y: -122}
-  m_SizeDelta: {x: -1628.1838, y: -1012.99963}
+  m_AnchoredPosition: {x: 447.18994, y: 17}
+  m_SizeDelta: {x: -1592.5638, y: -1012.9996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028417406
 MonoBehaviour:
@@ -11035,7 +11035,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fase 3
+  m_text: Floresta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1837a6803355a0a489dafd63a9be9838, type: 2}
   m_sharedMaterial: {fileID: -1674059857133749858, guid: 1837a6803355a0a489dafd63a9be9838, type: 2}

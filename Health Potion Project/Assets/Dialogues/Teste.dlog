@@ -2,7 +2,175 @@
     "AssetGuid": "e30d276349d3156418c8ebbaa6e126d2",
     "IsBlackboardVisible": false,
     "DialogueGraphVersion": "1.1.5",
-    "nodes": [],
-    "edges": [],
+    "nodes": [
+        {
+            "GUID": "010a5908-d341-401c-9aea-bc6b2b361821",
+            "Type": "Dlog.SelfNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 4.0227203369140629,
+                    "y": 199.12432861328126,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"oi\\\",\\\"PortGuidA\\\":\\\"3695d4bd-818c-431d-9801-c5c1e249ad28\\\",\\\"PortGuidB\\\":\\\"22fc082c-e181-473c-88f7-b466ab6cfdd1\\\"}]\"}",
+            "PortData": [
+                "46e8ee9f-cf31-4580-9a0c-50f8c73f6009",
+                "3695d4bd-818c-431d-9801-c5c1e249ad28",
+                "22fc082c-e181-473c-88f7-b466ab6cfdd1"
+            ]
+        },
+        {
+            "GUID": "628458ca-1253-4c39-bced-a1c19fabf981",
+            "Type": "Dlog.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 420.86956787109377,
+                    "y": 302.60870361328127,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"oi\\\",\\\"PortGuidA\\\":\\\"fbfb72d9-ba32-4472-9fb7-45899c900353\\\",\\\"PortGuidB\\\":\\\"5d240cdb-4316-4671-a189-4ebc339715a3\\\",\\\"PortGuidC\\\":\\\"862c54a9-0f63-4b3c-ac65-f93df33322ed\\\"}]\"}",
+            "PortData": [
+                "62ec543c-9aa6-4e21-8f9b-f44324e30920",
+                "66484410-ef0d-4a66-a292-39d687551025",
+                "fbfb72d9-ba32-4472-9fb7-45899c900353",
+                "5d240cdb-4316-4671-a189-4ebc339715a3",
+                "862c54a9-0f63-4b3c-ac65-f93df33322ed"
+            ]
+        },
+        {
+            "GUID": "046de708-9e0d-488f-a974-7690575480cb",
+            "Type": "Dlog.SelfNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 924.0,
+                    "y": 414.0,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"td bem?\\\",\\\"PortGuidA\\\":\\\"186d993e-74e8-472a-bf8c-fa9f6ebabac6\\\",\\\"PortGuidB\\\":\\\"0a533147-f4fc-4330-bdbe-0e0aac1f5d6c\\\"}]\"}",
+            "PortData": [
+                "714964e4-39e9-4a1b-9362-b5a78d5d40db",
+                "186d993e-74e8-472a-bf8c-fa9f6ebabac6",
+                "0a533147-f4fc-4330-bdbe-0e0aac1f5d6c"
+            ]
+        },
+        {
+            "GUID": "4c8c7d24-c745-4e9e-9b9d-92fe06b6b64a",
+            "Type": "Dlog.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 1395.0,
+                    "y": 511.9999694824219,
+                    "width": 393.9998779296875,
+                    "height": 177.00003051757813
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"td e com vc?\\\",\\\"PortGuidA\\\":\\\"132fd604-7fad-478d-9efb-e07a18f3d523\\\",\\\"PortGuidB\\\":\\\"145908a3-f1fc-4683-9c91-7300d65d68d7\\\",\\\"PortGuidC\\\":\\\"98b1624f-e2ea-4f87-8936-2fe39308fa09\\\"}]\"}",
+            "PortData": [
+                "f250ffba-b5a9-4c9e-b3b1-a8c19435331b",
+                "f0b18db9-162e-40fc-8158-3a5f71800e9e",
+                "132fd604-7fad-478d-9efb-e07a18f3d523",
+                "145908a3-f1fc-4683-9c91-7300d65d68d7",
+                "98b1624f-e2ea-4f87-8936-2fe39308fa09"
+            ]
+        },
+        {
+            "GUID": "9ea85770-c0c1-440b-b22b-34a79497023f",
+            "Type": "Dlog.SelfNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 1941.0,
+                    "y": 624.0,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"to mal\\\",\\\"PortGuidA\\\":\\\"2734ac70-a5cc-4f76-a8a2-0ab305715f78\\\",\\\"PortGuidB\\\":\\\"93d402e9-75b3-4188-983d-a1b422078b58\\\"}]\"}",
+            "PortData": [
+                "17321271-319a-4f0d-8047-d6231c8858a5",
+                "2734ac70-a5cc-4f76-a8a2-0ab305715f78",
+                "93d402e9-75b3-4188-983d-a1b422078b58"
+            ]
+        },
+        {
+            "GUID": "01b05546-19b8-437a-a2e8-6de649b46361",
+            "Type": "Dlog.NpcNode",
+            "DrawState": {
+                "Position": {
+                    "serializedVersion": "2",
+                    "x": 2516.521728515625,
+                    "y": 780.8695678710938,
+                    "width": 200.0,
+                    "height": 150.0
+                },
+                "Expanded": true
+            },
+            "NodeData": "{\"lines\":\"[{\\\"Line\\\":\\\"é foda né cara.\\\",\\\"PortGuidA\\\":\\\"4bab61e3-0326-4c84-967e-c463ff42388d\\\",\\\"PortGuidB\\\":\\\"1cb166d1-7d5c-4c70-81cc-309ce1193bed\\\",\\\"PortGuidC\\\":\\\"9afab512-3c93-423d-af01-537fcdbd418d\\\"}]\"}",
+            "PortData": [
+                "fe8c479e-a098-456f-a61b-5003ec752adc",
+                "42dcb966-42e6-4456-840f-28f4cf0e00a6",
+                "4bab61e3-0326-4c84-967e-c463ff42388d",
+                "1cb166d1-7d5c-4c70-81cc-309ce1193bed",
+                "9afab512-3c93-423d-af01-537fcdbd418d"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "Input": "628458ca-1253-4c39-bced-a1c19fabf981",
+            "Output": "010a5908-d341-401c-9aea-bc6b2b361821",
+            "InputPort": "62ec543c-9aa6-4e21-8f9b-f44324e30920",
+            "OutputPort": "3695d4bd-818c-431d-9801-c5c1e249ad28",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "046de708-9e0d-488f-a974-7690575480cb",
+            "Output": "628458ca-1253-4c39-bced-a1c19fabf981",
+            "InputPort": "714964e4-39e9-4a1b-9362-b5a78d5d40db",
+            "OutputPort": "fbfb72d9-ba32-4472-9fb7-45899c900353",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "4c8c7d24-c745-4e9e-9b9d-92fe06b6b64a",
+            "Output": "046de708-9e0d-488f-a974-7690575480cb",
+            "InputPort": "f250ffba-b5a9-4c9e-b3b1-a8c19435331b",
+            "OutputPort": "186d993e-74e8-472a-bf8c-fa9f6ebabac6",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "9ea85770-c0c1-440b-b22b-34a79497023f",
+            "Output": "4c8c7d24-c745-4e9e-9b9d-92fe06b6b64a",
+            "InputPort": "17321271-319a-4f0d-8047-d6231c8858a5",
+            "OutputPort": "132fd604-7fad-478d-9efb-e07a18f3d523",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        },
+        {
+            "Input": "01b05546-19b8-437a-a2e8-6de649b46361",
+            "Output": "9ea85770-c0c1-440b-b22b-34a79497023f",
+            "InputPort": "fe8c479e-a098-456f-a61b-5003ec752adc",
+            "OutputPort": "2734ac70-a5cc-4f76-a8a2-0ab305715f78",
+            "InputCapacity": 1,
+            "OutputCapacity": 0
+        }
+    ],
     "serializedProperties": []
 }

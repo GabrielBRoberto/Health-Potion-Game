@@ -82,6 +82,9 @@
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Main Menu\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Main Menu\Dialogue System\DialogueManager.cs" />
+    <Compile Include="Assets\Main Menu\Dialogue System\Dialogue.cs" />
+    <Compile Include="Assets\Main Menu\Dialogue System\DialogueTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
